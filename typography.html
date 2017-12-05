@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rich Art</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/simple-line-icons.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/retina.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <div id="mobile-indicator"></div>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-1">
+            <div class="header-menu-trigger" data-target=".header-menu-l"><span></span><span></span><span></span></div>
+            <div class="header-menu header-menu-l">
+              <ul>
+                <li><a href="#">Структура компании</a></li>
+                <li><a href="#">О Richart</a></li>
+                <li><a href="#">Бренды</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Партнерская программа</a></li>
+              </ul>
+            </div>
+            <div class="navbar-trigger"><span></span><span></span><span></span></div>
+          </div>
+          <div class="col-xs-12 col-sm-10">
+            <div class="nav collapse navbar-collapse" id="bs-navbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Обои</a></li>
+                <li><a href="#">Лепнина</a></li>
+                <li><a href="#">Краска</a></li>
+                <li><a href="#">Richartlife</a></li>
+                <li><a class="active" href="#">О Richart</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-1">
+            <div class="header-user">
+              <div class="header-user-btn" data-target=".header-menu-r">
+                <div class="ico icon-user"></div>
+              </div>
+            </div>
+            <div class="header-menu header-menu-r">
+              <ul>
+                <li><a href="#">Профиль</a></li>
+                <li><a href="#">Заказы</a></li>
+                <li><a href="#">Выйти</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="header-bottom-content">
+          <div class="row">
+            <div class="col-xs-12 col-sm-2">
+              <div class="header-logo"><a href="/"><img src="images/logo.png" alt="Rich Art"><img class="logo-mobile" src="images/logo-mobile.png" alt="Rich Art"></a></div>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+              <div class="header-contacts">
+                <div class="header-contacts-phone"><a href="tel:+7835264-08-18">+7 8352 64-08-18</a></div>
+                <div class="header-contacts-timetable">c 09:00 до 21:00 ежедневно</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+              <div class="header-controls">
+                <div class="header-controls-item"><a href="#">
+                    <div class="ico-wrapper">
+                      <div class="ico icon-magnifier"></div>
+                    </div>
+                    <div class="ttl">Поиск</div></a></div>
+                <div class="header-controls-item"><a href="#">
+                    <div class="ico-wrapper">
+                      <div class="ico icon-list">
+                        <div class="header-controls-count">2</div>
+                      </div>
+                    </div>
+                    <div class="ttl">Сравнение</div></a></div>
+                <div class="header-controls-item"><a href="#">
+                    <div class="ico-wrapper">
+                      <div class="ico icon-basket">
+                        <div class="header-controls-count">5</div>
+                      </div>
+                    </div>
+                    <div class="ttl">Корзина</div></a>
+                  <!-- Cart popup-->
+                  <div class="cart-popup">
+                    <div class="cart-popup-content">
+                      <div class="cart-list">
+                        <div class="cart-tmb">
+                          <div class="row">
+                            <div class="cart-tmb-pic"><a class="pic" href="#" style="background-image:url(files/catalog-tmb-1.jpg);"></a></div>
+                            <div class="cart-tmb-descr"><a href="#">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</a></div>
+                            <div class="cart-tmb-price">
+                              <div class="price">20 412 <span class="units">&#8381;</span></div>
+                              <div class="cart-tmb-count">1 шт.</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart-tmb">
+                          <div class="row">
+                            <div class="cart-tmb-pic"><a class="pic" href="#" style="background-image:url(files/catalog-tmb-2.jpg);"></a></div>
+                            <div class="cart-tmb-descr"><a href="#">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01</a></div>
+                            <div class="cart-tmb-price">
+                              <div class="price">15 000 <span class="units">&#8381;</span></div>
+                              <div class="cart-tmb-count">1 шт.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart-popup-footer">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6">
+                            <div class="btn btn-1 cart-popup-close">Свернуть</div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6"><a class="btn btn-2" href="#">Оформить заказ</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
+<div class="main">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="#">Главная</a></li>
+      <li>Личный кабинет</li>
+    </ul>
+    <div class="row">
+      <div class="col-xs-12 col-sm-3 sidebar">
+        <div class="sidebar-menu-trigger">
+          <div class="ico"><span></span><span></span><span></span></div>
+          <div class="name">Меню</div>
+        </div>
+        <ul class="sidebar-menu">
+          <li><a href="#">Структура компании</a></li>
+          <li><a class="active" href="#">О Richart</a></li>
+          <li><a href="#">Бренды</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Партнерская программа</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 page-content">
+        <h1>H1 - всё о магазине</h1>
+        <div class="big">
+          <p>Салон интерьерных решений «RICH ART» – творческий союз специалистов, создающих высококлассные, нестандартные и необычайно комфортные интерьеры.</p>
+        </div>
+        <h2>h2 - Что мы можем</h2>
+        <ul>
+          <li>Помочь Вам подобрать обои, лепнину, фрески, мозаику и другие отделочные материалы, подходящие именно Вам и Вашему интерьеру;</li>
+          <li>Грамотно проконсультировать о свойствах материалов и рассчитать их необходимое количество;</li>
+          <li>Доставить выбранный материал в кратчайшие сроки;</li>
+          <li>Разработать дизайн-проект любой сложности;</li>
+        </ul>
+        <div class="h2">h2 - как мы работаем</div>
+        <div class="intext-video"><iframe width="100%" height="525" src="https://www.youtube.com/embed/3PdoSPWylUg" frameborder="0" allowfullscreen></iframe></div>
+        <p>Жизненный цикл продукции транслирует потребительский метод изучения рынка. По сути, управление брендом специфицирует конвергентный целевой сегмент рынка. По мнению ведущих маркетологов, медиапланирование оправдывает из ряда вон выходящий медиабизнес. Сервисная стратегия, суммируя приведенные примеры, создает конструктивный анализ зарубежного опыта.</p>
+        <p>Отсюда естественно следует, что традиционный канал однородно детерминирует типичный ребрендинг. Инструмент маркетинга, отбрасывая подробности, отталкивает ролевой ребрендинг. Особенность рекламы требовальна к креативу. Стратегическое планирование вполне выполнимо. Бизнес-стратегия, конечно, отталкивает охват аудитории. Косвенная реклама, как принято считать, неоднозначна.</p>
+        <h2>h2 - наша миссия</h2>
+        <p>Инвестиционный продукт, как принято считать, допускает институциональный формат события. В соответствии с законом Ципфа, бренд определяет комплексный медиамикс. PR позиционирует фирменный департамент маркетинга и продаж, осознавая социальную ответственность бизнеса. Баннерная реклама, следовательно, выражена наиболее полно.</p>
+        <p><img src="files/typo-pic-1.jpg"></p>
+        <div class="h3">h3 - цели и задачи</div>
+        <p>Таргетирование исключительно ускоряет комплексный повторный контакт, осознав маркетинг как часть производства. Корпоративная культура, не меняя концепции, изложенной выше, порождает рекламный макет, полагаясь на инсайдерскую информацию. Воздействие на потребителя притягивает SWOT-анализ, невзирая на действия конкурентов. Каждая сфера рынка вырождена.</p>
+        <p>Размещение поразительно. Инвестиционный продукт, следовательно, тормозит коллективный BTL, используя опыт предыдущих кампаний. Стимулирование сбыта, как следует из вышесказанного, ускоряет нестандартный подход. Стратегическое планирование транслирует стратегический маркетинг. Личность топ менеджера все еще интересна для многих.</p>
+        <h4>h4 - Наша главная цель</h4>
+        <p>Продвижение проекта, безусловно, наиболее полно синхронизирует инвестиционный продукт. Стратегическое планирование, суммируя приведенные примеры, экономит межличностный рейтинг. А вот по мнению аналитиков медийный канал спонтанно синхронизирует социометрический департамент маркетинга и продаж, оптимизируя бюджеты. Стимулирование сбыта трансформирует эмпирический выставочный стенд. Медиамикс, согласно Ф.Котлеру, индуцирует медиамикс, учитывая современные тенденции. Поэтому привлечение аудитории продуцирует культурный департамент маркетинга и продаж.</p>
+        <blockquote>
+          <p>Креатив основан на тщательном анализе. Потребление, безусловно, трансформирует product placement. Стимулирование коммьюнити, пренебрегая деталями</p>
+        </blockquote>
+        <h2>H2 - Фирменный конкурент: медийная связь или особенность?</h2>
+        <p>Охват аудитории определяет межличностный системный анализ. Психологическая среда слабо специфицирует ролевой департамент маркетинга и продаж. Потребительская база концентрирует популярный социальный статус.</p>
+        <p>Представляется логичным, что рекламный бриф детерминирует целевой сегмент рынка. онкурентоспособность очевидна не для всех. Правда, специалисты отмечают, что стратегическое планирование искажает социометрический побочный PR-эффект.</p>
+        <p>Как предсказывают футурологи фактор коммуникации индуцирует культурный анализ зарубежного опыта, невзирая на действия конкурентов. Клиентский спрос, на первый взгляд, существенно переворачивает медиаплан.</p>
+        <h4>h4 - Молодежная аудитория переворачивает бизнес-план</h4>
+        <ul>
+          <li>А вот по мнению аналитиков размещение синхронизирует метод изучения рынка.
+            <ul>
+              <li>Не факт, что медиапланирование оправдывает охват аудитории, учитывая современные тенденции.</li>
+              <li>Баланс спроса и предложения программирует креативный процесс стратегического планирования.</li>
+            </ul>
+          </li>
+          <li>До недавнего времени считалось, что осведомленность о бренде усиливает комплексный медиамикс, признавая определенные рыночные тенденции.</li>
+        </ul>
+        <p>Наряду с этим, рекламное сообщество притягивает пул лояльных изданий. Раскрутка изоморфна времени. Стимулирование сбыта позиционирует мониторинг активности. Создание приверженного покупателя экономит план размещения.</p>
+        <p>Воздействие на потребителя экономит клиентский спрос, невзирая на действия конкурентов. Рекламное сообщество как всегда непредсказуемо. Фирменный стиль категорически консолидирует потребительский рынок.</p>
+        <ol>
+          <li>Баннерная реклама неоднозначна.</li>
+          <li>Позиционирование на рынке, в рамках сегодняшних воззрений, создает диктат потребителя.</li>
+          <li>Имидж предприятия экономит социометрический имидж, размещаясь во всех медиа.</li>
+          <li>Правда, специалисты отмечают, что производство конструктивно.</li>
+          <li>К тому же ретроконверсия национального наследия раскручивает пресс-клиппинг, повышая конкуренцию.</li>
+        </ol>
+        <p>Наряду с этим, диктат потребителя подсознательно концентрирует стиль менеджмента. Бренд, как принято считать, версифицирован. Портрет потребителя, вопреки мнению П.Друкера, уравновешивает эмпирический ребрендинг, осознавая социальную ответственность бизнеса. Интеграция вырождена.</p>
+        <div class="article-footer">
+          <div class="article-footer-author">
+            <div class="name">Иванка Петрова</div>
+            <div class="post">Директор по развитию</div>
+          </div>
+          <div class="article-footer-share-buttons">
+            <script type="text/javascript">(function() {
+            if (window.pluso)if (typeof window.pluso.start == "function") return;
+            if (window.ifpluso == undefined) { window.ifpluso = 1;
+              var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+              s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+              s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+              var h=d[g]('body')[0];
+              h.appendChild(s);
+            }})();</script>
+            <div class="pluso" data-background="none;" data-options="medium,square,line,horizontal,counter,sepcounter=1,theme=14" data-services="vkontakte,odnoklassniki,facebook,twitter,google"></div>
+          </div>
+        </div>
+        <div class="h2">h2 - простая таблица</div>
+        <p>KBSound Premium - это система для фонового озвучивания средних и крупных помещений, таких как кухня, спальня, ванная, офис, гостиничный номер. Она состоит из двух динамиков 2,5 дюйма, электронного модуля и блока питания. Электронный модуль предназначен для настенного монтажа. Модуль включает в себя FM-тюнер, усилитель, часы, календарь, есть вход мини-джек для подключения внешних источников звука. В комплект входят все необходимые кабели.</p>
+        <table>
+          <tr>
+            <td>Категория</td>
+            <td>Системы мультирум</td>
+            <td>Системы мультирум</td>
+            <td>Системы мультирум</td>
+          </tr>
+          <tr>
+            <td>Производитель</td>
+            <td>KBSOuND</td>
+            <td>KBSOuND</td>
+            <td>KBSOuND</td>
+          </tr>
+          <tr>
+            <td>Тип помещения</td>
+            <td>Жилые комнаты</td>
+            <td>Жилые комнаты</td>
+            <td>Жилые комнаты</td>
+          </tr>
+          <tr>
+            <td>Тип установки</td>
+            <td>В потолок</td>
+            <td>В потолок</td>
+            <td>В потолок</td>
+          </tr>
+          <tr>
+            <td>Цвет динамиков</td>
+            <td>Белые</td>
+            <td>Белые</td>
+            <td>Белые</td>
+          </tr>
+          <tr>
+            <td>Мощность динамиков</td>
+            <td>100 W</td>
+            <td>100 W</td>
+            <td>100 W</td>
+          </tr>
+          <tr>
+            <td>Частотный диапазон</td>
+            <td>100 Hz - 20 kHz</td>
+            <td>100 Hz - 20 kHz</td>
+            <td>100 Hz - 20 kHz</td>
+          </tr>
+          <tr>
+            <td>Bluetooth</td>
+            <td>Есть</td>
+            <td>Есть</td>
+            <td>Есть</td>
+          </tr>
+          <tr>
+            <td>FM-тюнер</td>
+            <td>Есть</td>
+            <td>Есть</td>
+            <td>Есть</td>
+          </tr>
+        </table>
+        <h2>h2 - непростая таблица</h2>
+        <p>KBSound Premium - это система для фонового озвучивания средних и крупных помещений, таких как кухня, спальня, ванная, офис, гостиничный номер. Она состоит из двух динамиков 2,5 дюйма, электронного модуля и блока питания. Электронный модуль предназначен для настенного монтажа. Модуль включает в себя FM-тюнер</p>
+        <table class="table-alt">
+          <tr>
+            <th>Описание</th>
+            <th>Значение 1</th>
+            <th>Значение 2</th>
+            <th>Значение 3</th>
+          </tr>
+          <tr>
+            <td>Искусство медиапланирования усиливает целевой сегмент рынка. Имиджевая реклама однообразно специфицирует связанный рекламный блок.</td>
+            <td>Анализ зарубежного опыта основан на анализе телесмотрения. Медийная реклама существенно концентрирует конструктивный формирование имиджа.</td>
+            <td>1 500</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Потребление, суммируя приведенные примеры, естественно детерминирует рейтинг.</td>
+            <td>PR поддерживает экспериментальный потребительский рынок. Имидж, в рамках сегодняшних воззрений, обоснован необходимостью.</td>
+            <td>3 000</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td>Воздействие на потребителя ускоряет конструктивный фирменный стиль. Рейтинг категорически усиливает эмпирический рейтинг.</td>
+            <td>Фактор коммуникации искажает нишевый проект. Потребительский рынок директивно продуцирует продвигаемый клиентский спрос.</td>
+            <td>4 000</td>
+            <td>800</td>
+          </tr>
+        </table>
+        <h2>h2 - форма</h2>
+        <div class="row">
+          <div class="col-xs-12 col-sm-10">
+            <div class="form-message form-message-success">
+              <div class="ttl">Все удалось!</div>
+              <p>Описание успеха. Может быть очень-очень длинным</p>
+            </div>
+            <div class="form-message form-message-error">
+              <div class="ttl">Ошибка!</div>
+              <p>Описание ошибки. Может быть очень-очень длинным</p>
+            </div>
+            <div class="form-wrapper">
+              <form>
+                <div class="form-group">
+                  <div class="form-item">
+                    <label for="form_name">Имя</label>
+                    <input type="text" id="form_name" name="form_name" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-item">
+                    <label for="form_email">E-mail</label>
+                    <input type="email" id="form_email" name="form_email" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-item">
+                    <label for="form_city">Населенный пункт</label>
+                    <input type="text" id="form_city" name="form_city" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-item">
+                    <label for="form_address">Адрес</label>
+                    <input type="text" id="form_address" name="form_address" required placeholder="Введите адрес">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                      <div class="form-item">
+                        <label for="form_town">Город</label>
+                        <select data-actions-box="true" id="form_town" name="form_town" required>
+                          <option value="">Выберите город</option>
+                          <option value="1">Москва</option>
+                          <option value="2">Санкт-Петербург</option>
+                          <option value="3">Архангельск</option>
+                          <option value="4">Анадырь</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                      <div class="form-item">
+                        <label for="form_brand">Бренд</label>
+                        <select multiple data-actions-box="true" id="form_brand" name="form_brand" title="Бренд">
+                          <option value="1">4 seasons</option>
+                          <option value="2">Anna French</option>
+                          <option value="3">Anthology</option>
+                          <option value="4">Arthouse</option>
+                          <option value="5">4 seasons</option>
+                          <option value="6">Anna French</option>
+                          <option value="7">Anthology</option>
+                          <option value="8">Arthouse</option>
+                          <option value="9">4 seasons</option>
+                          <option value="10">Anna French</option>
+                          <option value="11">Anthology</option>
+                          <option value="12">Arthouse</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-item form-item-checkbox">
+                    <div class="form-checkbox">
+                      <input type="checkbox" id="form_checkbox_1" name="form_checkbox_1" required>
+                      <label for="form_checkbox_1">Чекбокс 1</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-item form-item-checkbox">
+                    <div class="form-checkbox">
+                      <input type="checkbox" id="form_checkbox_2" name="form_checkbox_2">
+                      <label for="form_checkbox_2">Чекбокс 2</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-item form-item-radio">
+                    <div class="form-radio">
+                      <input type="radio" id="form_radio_1" name="form_radio_1" required>
+                      <label for="form_radio_1">Опция 1</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-item form-item-radio">
+                    <div class="form-radio">
+                      <input type="radio" id="form_radio_2" name="form_radio_1" required>
+                      <label for="form_radio_2">Опция 2</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-file">
+                    <input type="file" id="form_file" name="form_file">
+                  </div>
+                </div>
+                <div class="form-footer">
+                  <input class="btn btn-2" type="submit" value="Оформить заказ">
+                  <div class="btn btn-2 clear-form">Отменить</div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8">
+          <div class="clearfix">
+            <div class="footer-logo"><a href="/"><img src="images/footer-logo.png"></a></div>
+            <div class="footer-subscribe">
+              <form class="footer-subscribe-form">
+                <div class="h4">Подписаться на новости</div>
+                <div class="form-group">
+                  <div class="form-field">
+                    <label class="placeholder" for="footer_subscribe_email">Введите ваш email</label>
+                    <input type="email" name="footer_subscribe_email" id="footer_subscribe_email" required>
+                  </div>
+                  <input type="submit" value="Ок">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="footer-contacts">
+            <table class="footer-contacts-table">
+              <tr>
+                <td class="name">Телефон:</td>
+                <td class="val">+7 (903) 177-06-17</td>
+              </tr>
+              <tr>
+                <td class="name">Адрес:</td>
+                <td class="val">г. Чебоксары ул. Калинина, 91</td>
+              </tr>
+              <tr>
+                <td class="name">Время работы:</td>
+                <td class="val">Пн-Пт: 10:00 - 19:00, Сб: 10:00 - 17:00</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-2">
+          <div class="footer-menu-wrapper">
+            <div class="h4"><a href="#">Каталог</a></div>
+            <ul class="footer-menu">
+              <li><a href="#">Обои</a></li>
+              <li><a href="#">Лепнина</a></li>
+              <li><a href="#">Краска</a></li>
+              <li><a href="#">Новинки</a></li>
+              <li><a href="#">Популярные</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-2">
+          <div class="footer-menu-wrapper">
+            <div class="h4"><a href="#">Информация</a></div>
+            <ul class="footer-menu">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Гарантии и возврат</a></li>
+              <li><a href="#">Вопросы и ответы</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="row">
+        <div class="col-xs-12 col-sm-2 col-sm-push-7">
+          <div class="footer-soclinks"><a class="footer-soclink-vk" href="#"></a><a class="footer-soclink-fb" href="#"></a><a class="footer-soclink-insta" href="#"></a></div>
+        </div>
+        <div class="col-xs-12 col-sm-7 col-sm-pull-2">
+          <div class="footer-copy">&copy; 2014. Салон интерьерных решений RICH ART - элитные обои, фрески, лепнина</div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <div class="footer-dev">Разработка сайта: <a href="#">Loya</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer><div class="modal fade callback-modal" id="callbackModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="h2">Заказать звонок</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="callback-form-wrapper">
+          <div class="callback-form">
+
+            <form id="callbackForm2">
+              <div class="form-item">
+                <label for="callback_2_name" class="placeholder">Ваше имя</label>
+                <input type="text" name="callback_2_name" id="callback_2_name" required >
+              </div>
+              <div class="form-item">
+                <label for="callback_2_phone" class="placeholder">Телефон</label>
+                <input type="text" name="callback_2_phone" id="callback_2_phone" class="input-phone" required>
+              </div>
+              <div class="form-footer">
+                <button type="submit" class="btn btn-1">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade success-modal" id="successModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="h2">Спасибо!</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Ваша заявка успешно отправлена.</p>
+        <p>Наши менеджеры свяжутся с вами в ближайшее время</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.nicefileinput.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/additional-methods.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/wNumb.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="js/greensock/TweenMax.min.js"></script>
+<script src="js/greensock/plugins/CSSRulePlugin.min.js"></script>
+<script src="js/greensock/plugins/ScrollToPlugin.min.js"></script>
+<script src="js/iscroll-probe.js"></script>
+<script src="js/scrollmagic/ScrollMagic.min.js"></script>
+<script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnKKzl2zYJy_aTqe-1wAI0BHOrDNvVbEY&callback=initMap" async defer></script>

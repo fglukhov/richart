@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rich Art</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/simple-line-icons.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/retina.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <div id="mobile-indicator"></div>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-1">
+            <div class="header-menu-trigger" data-target=".header-menu-l"><span></span><span></span><span></span></div>
+            <div class="header-menu header-menu-l">
+              <ul>
+                <li><a href="#">Структура компании</a></li>
+                <li><a href="#">О Richart</a></li>
+                <li><a href="#">Бренды</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Партнерская программа</a></li>
+              </ul>
+            </div>
+            <div class="navbar-trigger"><span></span><span></span><span></span></div>
+          </div>
+          <div class="col-xs-12 col-sm-10">
+            <div class="nav collapse navbar-collapse" id="bs-navbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Обои</a></li>
+                <li><a href="#">Лепнина</a></li>
+                <li><a href="#">Краска</a></li>
+                <li><a href="#">Richartlife</a></li>
+                <li><a class="active" href="#">О Richart</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-1">
+            <div class="header-user">
+              <div class="header-user-btn" data-target=".header-menu-r">
+                <div class="ico icon-user"></div>
+              </div>
+            </div>
+            <div class="header-menu header-menu-r">
+              <ul>
+                <li><a href="#">Профиль</a></li>
+                <li><a href="#">Заказы</a></li>
+                <li><a href="#">Выйти</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="header-bottom-content">
+          <div class="row">
+            <div class="col-xs-12 col-sm-2">
+              <div class="header-logo"><a href="/"><img src="images/logo.png" alt="Rich Art"><img class="logo-mobile" src="images/logo-mobile.png" alt="Rich Art"></a></div>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+              <div class="header-contacts">
+                <div class="header-contacts-phone"><a href="tel:+7835264-08-18">+7 8352 64-08-18</a></div>
+                <div class="header-contacts-timetable">c 09:00 до 21:00 ежедневно</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+              <div class="header-controls">
+                <div class="header-controls-item"><a href="#">
+                    <div class="ico-wrapper">
+                      <div class="ico icon-magnifier"></div>
+                    </div>
+                    <div class="ttl">Поиск</div></a></div>
+                <div class="header-controls-item"><a href="#">
+                    <div class="ico-wrapper">
+                      <div class="ico icon-list">
+                        <div class="header-controls-count">2</div>
+                      </div>
+                    </div>
+                    <div class="ttl">Сравнение</div></a></div>
+                <div class="header-controls-item"><a href="#">
+                    <div class="ico-wrapper">
+                      <div class="ico icon-basket">
+                        <div class="header-controls-count">5</div>
+                      </div>
+                    </div>
+                    <div class="ttl">Корзина</div></a>
+                  <!-- Cart popup-->
+                  <div class="cart-popup">
+                    <div class="cart-popup-content">
+                      <div class="cart-list">
+                        <div class="cart-tmb">
+                          <div class="row">
+                            <div class="cart-tmb-pic"><a class="pic" href="#" style="background-image:url(files/catalog-tmb-1.jpg);"></a></div>
+                            <div class="cart-tmb-descr"><a href="#">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</a></div>
+                            <div class="cart-tmb-price">
+                              <div class="price">20 412 <span class="units">&#8381;</span></div>
+                              <div class="cart-tmb-count">1 шт.</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart-tmb">
+                          <div class="row">
+                            <div class="cart-tmb-pic"><a class="pic" href="#" style="background-image:url(files/catalog-tmb-2.jpg);"></a></div>
+                            <div class="cart-tmb-descr"><a href="#">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01</a></div>
+                            <div class="cart-tmb-price">
+                              <div class="price">15 000 <span class="units">&#8381;</span></div>
+                              <div class="cart-tmb-count">1 шт.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart-popup-footer">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6">
+                            <div class="btn btn-1 cart-popup-close">Свернуть</div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6"><a class="btn btn-2" href="#">Оформить заказ</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
+<div class="main">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="#">Главная</a></li>
+      <li>Расширенный поиск</li>
+    </ul>
+    <div class="page-content">
+      <h1>Расширенный поиск</h1>
+      <div class="search-form">
+        <form>
+          <div class="form-section">
+            <div class="form-group">
+              <div class="form-item form-item-alt">
+                <label class="placeholder" for="search_name">Артикул или название</label>
+                <input type="text" id="search_name" name="search_name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="form-group">
+                  <select multiple data-actions-box="true" id="search_color" name="search_color" title="Цвет">
+                    <option value="2" data-content="&lt;span class=&quot;option-color&quot; style=&quot;background-color:orange;&quot;&gt;&lt;/span&gt; Оранжевый">Оранжевый</option>
+                    <option value="3" data-content="&lt;span class=&quot;option-color&quot; style=&quot;background-color:yellow;&quot;&gt;&lt;/span&gt; Желтый">Желтый</option>
+                    <option value="4" data-content="&lt;span class=&quot;option-color&quot; style=&quot;background-color:green;&quot;&gt;&lt;/span&gt; Зеленый">Зеленый</option>
+                    <option value="5" data-content="&lt;span class=&quot;option-color&quot; style=&quot;background-color:dodgerblue;&quot;&gt;&lt;/span&gt; Голубой">Голубой</option>
+                    <option value="6" data-content="&lt;span class=&quot;option-color&quot; style=&quot;background-color:blue;&quot;&gt;&lt;/span&gt; Синий">Синий</option>
+                    <option value="7" data-content="&lt;span class=&quot;option-color&quot; style=&quot;background-color:darkviolet;&quot;&gt;&lt;/span&gt; Фиолетовый">Фиолетовый</option>
+                    <option value="1" data-content="&lt;span class=&quot;option-color&quot; style=&quot;background-color:red;&quot;&gt;&lt;/span&gt; Красный">Красный</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="form-group">
+                  <select multiple data-actions-box="true" id="search_brand" name="search_brand" title="Бренд">
+                    <option value="1">4 seasons</option>
+                    <option value="2">Anna French</option>
+                    <option value="3">Anthology</option>
+                    <option value="4">Arthouse</option>
+                    <option value="5">4 seasons</option>
+                    <option value="6">Anna French</option>
+                    <option value="7">Anthology</option>
+                    <option value="8">Arthouse</option>
+                    <option value="9">4 seasons</option>
+                    <option value="10">Anna French</option>
+                    <option value="11">Anthology</option>
+                    <option value="12">Arthouse</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="form-group">
+                  <select multiple data-actions-box="true" id="search_price" name="search_price" title="Цена">
+                    <option value="1">100 - 1000 &#8381;</option>
+                    <option value="2">1001 - 2000 &#8381;</option>
+                    <option value="3">2001 - 3000 &#8381;</option>
+                    <option value="4">3001 - 4000 &#8381;</option>
+                    <option value="5">4001 - 100 000 &#8381;</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="form-group">
+                  <select multiple data-actions-box="true" id="search_stock" name="search_stock" title="Наличие">
+                    <option value="1">В наличии</option>
+                    <option value="2">Под заказ</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-extra">
+            <div class="form-section">
+              <div class="form-extra-content">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="h4">Страна производства</div>
+                    <div class="columns-2">
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_1" name="search_country_1">
+                          <label for="search_country_1">Англия</label>
+                        </div>
+                      </div>
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_2" name="search_country_2">
+                          <label for="search_country_2">Бельгия</label>
+                        </div>
+                      </div>
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_3" name="search_country_3">
+                          <label for="search_country_3">Испания</label>
+                        </div>
+                      </div>
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_4" name="search_country_4">
+                          <label for="search_country_4">Италия</label>
+                        </div>
+                      </div>
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_5" name="search_country_5">
+                          <label for="search_country_5">Канада</label>
+                        </div>
+                      </div>
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_6" name="search_country_6">
+                          <label for="search_country_6">Китай</label>
+                        </div>
+                      </div>
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_7" name="search_country_7">
+                          <label for="search_country_7">Корея</label>
+                        </div>
+                      </div>
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_8" name="search_country_8">
+                          <label for="search_country_8">Нидерланды</label>
+                        </div>
+                      </div>
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_9" name="search_country_9">
+                          <label for="search_country_9">Россия</label>
+                        </div>
+                      </div>
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_10" name="search_country_10">
+                          <label for="search_country_10">США</label>
+                        </div>
+                      </div>
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_11" name="search_country_11">
+                          <label for="search_country_11">Тайланд</label>
+                        </div>
+                      </div>
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_12" name="search_country_12">
+                          <label for="search_country_12">Финляндия</label>
+                        </div>
+                      </div>
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_13" name="search_country_13">
+                          <label for="search_country_13">Франция</label>
+                        </div>
+                      </div>
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_14" name="search_country_14">
+                          <label for="search_country_14">Чехия</label>
+                        </div>
+                      </div>
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_15" name="search_country_15">
+                          <label for="search_country_15">Швеция</label>
+                        </div>
+                      </div>
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_16" name="search_country_16">
+                          <label for="search_country_16">ЮАР</label>
+                        </div>
+                      </div>
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_17" name="search_country_17">
+                          <label for="search_country_17">Япония</label>
+                        </div>
+                      </div>
+                      <div class="form-item form-item-checkbox form-item-checkbox-small">
+                        <div class="form-checkbox">
+                          <input type="checkbox" id="search_country_18" name="search_country_18">
+                          <label for="search_country_18">Англия</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-3">
+                    <div class="h4">Тип обоев</div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_type_1" name="search_type_1">
+                        <label for="search_type_1">Рулонные обои</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_type_2" name="search_type_2">
+                        <label for="search_type_2">Панно / Фотообои</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_type_3" name="search_type_3">
+                        <label for="search_type_3">Бордюры</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_type_4" name="search_type_4">
+                        <label for="search_type_4">Погонными метрами</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_type_5" name="search_type_5">
+                        <label for="search_type_5">Наклейки</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_type_6" name="search_type_6">
+                        <label for="search_type_6">Мозаика</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-3">
+                    <div class="h4">Материал</div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_material_1" name="search_material_1">
+                        <label for="search_material_1">Бумага</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_material_2" name="search_material_2">
+                        <label for="search_material_2">Винил</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_material_3" name="search_material_3">
+                        <label for="search_material_3">Винил / бумага</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_material_4" name="search_material_4">
+                        <label for="search_material_4">Винил / флизелин</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_material_5" name="search_material_5">
+                        <label for="search_material_5">Натуральные</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_material_6" name="search_material_6">
+                        <label for="search_material_6">Натуральные материалы</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_material_7" name="search_material_7">
+                        <label for="search_material_7">Пробка</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_material_8" name="search_material_8">
+                        <label for="search_material_8">Стекло</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_material_9" name="search_material_9">
+                        <label for="search_material_9">Стекловолокно</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_material_10" name="search_material_10">
+                        <label for="search_material_10">Текстиль</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_material_11" name="search_material_11">
+                        <label for="search_material_11">Флизелин</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_material_12" name="search_material_12">
+                        <label for="search_material_12">Флок</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-2">
+                    <div class="h4">Фактура обоев</div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_texture_1" name="search_texture_1">
+                        <label for="search_texture_1">Гладкая</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_texture_2" name="search_texture_2">
+                        <label for="search_texture_2">Рельефная</label>
+                      </div>
+                    </div>
+                    <div class="form-item form-item-checkbox form-item-checkbox-small">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="search_texture_3" name="search_texture_3">
+                        <label for="search_texture_3">Жатая</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-extra-trigger">
+                <div class="trigger" data-expand-text="Показать дополнительные параметры" data-collapse-text="Скрыть дополнительные параметры">Показать дополнительные параметры</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-footer">
+            <div class="btn btn-1 form-reset">Сбросить</div>
+            <input class="btn btn-2" type="submit" value="Искать">
+          </div>
+        </form>
+      </div>
+      <div class="search-catalog">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="catalog-tmb">
+              <div class="full-ttl">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</div><a class="tmb-like" href="#"></a><a href="#">
+                <div class="tmb-pic" style="background-image:url(files/catalog-tmb-1.jpg);"></div>
+                <div class="tmb-ttl">Aura</div>
+                <div class="tmb-article">арт. 01-1253</div></a>
+              <div class="tmb-price"><span class="price">20 412</span>&nbsp;<span class="units">&#8381;</span></div>
+              <div class="tmb-compare active"><a class="icon-list active active" href="#"></a>
+                <div class="catalog-tooltip">
+                  <div class="arrow"></div>Товар добавлен <a href='#'>в список сравнения</a>
+                </div>
+              </div>
+              <div class="tmb-cart"><a class="icon-basket" href="#"></a></div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="catalog-tmb">
+              <div class="full-ttl">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</div><a class="active tmb-like" href="#"></a><a href="#">
+                <div class="tmb-pic" style="background-image:url(files/catalog-tmb-2.jpg);"></div>
+                <div class="tmb-ttl">Axiom</div>
+                <div class="tmb-article">арт. 01-1254</div></a>
+              <div class="tmb-price"><span class="price">20 412</span>&nbsp;<span class="units">&#8381;</span></div>
+              <div class="tmb-compare"><a class="icon-list" href="#"></a></div>
+              <div class="tmb-cart"><a class="icon-basket" href="#"></a></div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="catalog-tmb">
+              <div class="full-ttl">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</div><a class="tmb-like" href="#"></a><a href="#">
+                <div class="tmb-pic" style="background-image:url(files/catalog-tmb-3.jpg);"></div>
+                <div class="tmb-ttl">Balmoral</div>
+                <div class="tmb-article">арт. 01-1255</div></a>
+              <div class="tmb-price"><span class="price">20 412</span>&nbsp;<span class="units">&#8381;</span></div>
+              <div class="tmb-compare"><a class="icon-list" href="#"></a></div>
+              <div class="tmb-cart active"><a class="icon-basket active active" href="#"></a></div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="catalog-tmb">
+              <div class="full-ttl">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</div><a class="tmb-like" href="#"></a><a href="#">
+                <div class="tmb-pic" style="background-image:url(files/catalog-tmb-1.jpg);"></div>
+                <div class="tmb-ttl">Aura</div>
+                <div class="tmb-article">арт. 01-1253</div></a>
+              <div class="tmb-price"><span class="price">20 412</span>&nbsp;<span class="units">&#8381;</span></div>
+              <div class="tmb-compare active"><a class="icon-list active active" href="#"></a>
+                <div class="catalog-tooltip">
+                  <div class="arrow"></div>Товар добавлен <a href='#'>в список сравнения</a>
+                </div>
+              </div>
+              <div class="tmb-cart"><a class="icon-basket" href="#"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8">
+          <div class="clearfix">
+            <div class="footer-logo"><a href="/"><img src="images/footer-logo.png"></a></div>
+            <div class="footer-subscribe">
+              <form class="footer-subscribe-form">
+                <div class="h4">Подписаться на новости</div>
+                <div class="form-group">
+                  <div class="form-field">
+                    <label class="placeholder" for="footer_subscribe_email">Введите ваш email</label>
+                    <input type="email" name="footer_subscribe_email" id="footer_subscribe_email" required>
+                  </div>
+                  <input type="submit" value="Ок">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="footer-contacts">
+            <table class="footer-contacts-table">
+              <tr>
+                <td class="name">Телефон:</td>
+                <td class="val">+7 (903) 177-06-17</td>
+              </tr>
+              <tr>
+                <td class="name">Адрес:</td>
+                <td class="val">г. Чебоксары ул. Калинина, 91</td>
+              </tr>
+              <tr>
+                <td class="name">Время работы:</td>
+                <td class="val">Пн-Пт: 10:00 - 19:00, Сб: 10:00 - 17:00</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-2">
+          <div class="footer-menu-wrapper">
+            <div class="h4"><a href="#">Каталог</a></div>
+            <ul class="footer-menu">
+              <li><a href="#">Обои</a></li>
+              <li><a href="#">Лепнина</a></li>
+              <li><a href="#">Краска</a></li>
+              <li><a href="#">Новинки</a></li>
+              <li><a href="#">Популярные</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-2">
+          <div class="footer-menu-wrapper">
+            <div class="h4"><a href="#">Информация</a></div>
+            <ul class="footer-menu">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Гарантии и возврат</a></li>
+              <li><a href="#">Вопросы и ответы</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="row">
+        <div class="col-xs-12 col-sm-2 col-sm-push-7">
+          <div class="footer-soclinks"><a class="footer-soclink-vk" href="#"></a><a class="footer-soclink-fb" href="#"></a><a class="footer-soclink-insta" href="#"></a></div>
+        </div>
+        <div class="col-xs-12 col-sm-7 col-sm-pull-2">
+          <div class="footer-copy">&copy; 2014. Салон интерьерных решений RICH ART - элитные обои, фрески, лепнина</div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <div class="footer-dev">Разработка сайта: <a href="#">Loya</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer><div class="modal fade callback-modal" id="callbackModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="h2">Заказать звонок</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="callback-form-wrapper">
+          <div class="callback-form">
+
+            <form id="callbackForm2">
+              <div class="form-item">
+                <label for="callback_2_name" class="placeholder">Ваше имя</label>
+                <input type="text" name="callback_2_name" id="callback_2_name" required >
+              </div>
+              <div class="form-item">
+                <label for="callback_2_phone" class="placeholder">Телефон</label>
+                <input type="text" name="callback_2_phone" id="callback_2_phone" class="input-phone" required>
+              </div>
+              <div class="form-footer">
+                <button type="submit" class="btn btn-1">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade success-modal" id="successModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="h2">Спасибо!</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Ваша заявка успешно отправлена.</p>
+        <p>Наши менеджеры свяжутся с вами в ближайшее время</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.nicefileinput.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/additional-methods.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/wNumb.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="js/greensock/TweenMax.min.js"></script>
+<script src="js/greensock/plugins/CSSRulePlugin.min.js"></script>
+<script src="js/greensock/plugins/ScrollToPlugin.min.js"></script>
+<script src="js/iscroll-probe.js"></script>
+<script src="js/scrollmagic/ScrollMagic.min.js"></script>
+<script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnKKzl2zYJy_aTqe-1wAI0BHOrDNvVbEY&callback=initMap" async defer></script>

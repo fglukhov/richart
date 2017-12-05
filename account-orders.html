@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rich Art</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/simple-line-icons.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/retina.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <div id="mobile-indicator"></div>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-1">
+            <div class="header-menu-trigger" data-target=".header-menu-l"><span></span><span></span><span></span></div>
+            <div class="header-menu header-menu-l">
+              <ul>
+                <li><a href="#">Структура компании</a></li>
+                <li><a href="#">О Richart</a></li>
+                <li><a href="#">Бренды</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Партнерская программа</a></li>
+              </ul>
+            </div>
+            <div class="navbar-trigger"><span></span><span></span><span></span></div>
+          </div>
+          <div class="col-xs-12 col-sm-10">
+            <div class="nav collapse navbar-collapse" id="bs-navbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Обои</a></li>
+                <li><a href="#">Лепнина</a></li>
+                <li><a href="#">Краска</a></li>
+                <li><a href="#">Richartlife</a></li>
+                <li><a class="active" href="#">О Richart</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-1">
+            <div class="header-user">
+              <div class="header-user-btn" data-target=".header-menu-r">
+                <div class="ico icon-user"></div>
+              </div>
+            </div>
+            <div class="header-menu header-menu-r">
+              <ul>
+                <li><a href="#">Профиль</a></li>
+                <li><a href="#">Заказы</a></li>
+                <li><a href="#">Выйти</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="header-bottom-content">
+          <div class="row">
+            <div class="col-xs-12 col-sm-2">
+              <div class="header-logo"><a href="/"><img src="images/logo.png" alt="Rich Art"><img class="logo-mobile" src="images/logo-mobile.png" alt="Rich Art"></a></div>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+              <div class="header-contacts">
+                <div class="header-contacts-phone"><a href="tel:+7835264-08-18">+7 8352 64-08-18</a></div>
+                <div class="header-contacts-timetable">c 09:00 до 21:00 ежедневно</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+              <div class="header-controls">
+                <div class="header-controls-item"><a href="#">
+                    <div class="ico-wrapper">
+                      <div class="ico icon-magnifier"></div>
+                    </div>
+                    <div class="ttl">Поиск</div></a></div>
+                <div class="header-controls-item"><a href="#">
+                    <div class="ico-wrapper">
+                      <div class="ico icon-list">
+                        <div class="header-controls-count">2</div>
+                      </div>
+                    </div>
+                    <div class="ttl">Сравнение</div></a></div>
+                <div class="header-controls-item"><a href="#">
+                    <div class="ico-wrapper">
+                      <div class="ico icon-basket">
+                        <div class="header-controls-count">5</div>
+                      </div>
+                    </div>
+                    <div class="ttl">Корзина</div></a>
+                  <!-- Cart popup-->
+                  <div class="cart-popup">
+                    <div class="cart-popup-content">
+                      <div class="cart-list">
+                        <div class="cart-tmb">
+                          <div class="row">
+                            <div class="cart-tmb-pic"><a class="pic" href="#" style="background-image:url(files/catalog-tmb-1.jpg);"></a></div>
+                            <div class="cart-tmb-descr"><a href="#">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</a></div>
+                            <div class="cart-tmb-price">
+                              <div class="price">20 412 <span class="units">&#8381;</span></div>
+                              <div class="cart-tmb-count">1 шт.</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart-tmb">
+                          <div class="row">
+                            <div class="cart-tmb-pic"><a class="pic" href="#" style="background-image:url(files/catalog-tmb-2.jpg);"></a></div>
+                            <div class="cart-tmb-descr"><a href="#">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01</a></div>
+                            <div class="cart-tmb-price">
+                              <div class="price">15 000 <span class="units">&#8381;</span></div>
+                              <div class="cart-tmb-count">1 шт.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart-popup-footer">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6">
+                            <div class="btn btn-1 cart-popup-close">Свернуть</div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6"><a class="btn btn-2" href="#">Оформить заказ</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
+<div class="main">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="#">Главная</a></li>
+      <li>Личный кабинет</li>
+    </ul>
+    <div class="row">
+      <div class="col-xs-12 col-sm-3 sidebar">
+        <div class="sidebar-menu-trigger">
+          <div class="ico"><span></span><span></span><span></span></div>
+          <div class="name">Меню</div>
+        </div>
+        <ul class="sidebar-menu sidebar-menu-alt">
+          <li><a href="#">Персональный раздел</a></li>
+          <li><a href="#"> Профиль</a></li>
+          <li><a class="active" href="#">Заказы</a></li>
+          <li><a href="#">Выйти</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 page-content">
+        <h1>Заказы</h1>
+        <div class="h4">Заказы в статусе <span>«Принят, ожидается оплата»</span></div>
+        <p class="top-pull">Заказ принят, но пока не обрабатывается (например, заказ только что создан или ожидается оплата заказа)</p>
+        <div class="orders-list">
+          <div class="orders-item">
+            <div class="orders-item-l">
+              <div class="h4">Заказ №4570 от 15.07.2016</div>
+              <table class="order-info-table">
+                <tr>
+                  <td class="name">Сумма к оплате</td>
+                  <td class="val">13 300 руб.</td>
+                </tr>
+                <tr>
+                  <td class="name">Оплачен</td>
+                  <td class="val">Нет</td>
+                </tr>
+                <tr>
+                  <td class="name">Способ оплаты</td>
+                  <td class="val">Наличные курьеру</td>
+                </tr>
+                <tr>
+                  <td class="name">Доставка</td>
+                  <td class="val">Доставка курьером</td>
+                </tr>
+                <tr>
+                  <td class="name">Состав заказа</td>
+                  <td class="val">
+                    <p>Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01</p>
+                    <p>SE12261b</p>
+                  </td>
+                </tr>
+              </table>
+              <div class="order-more-link"><a href="#">Подробнее о заказе</a></div>
+            </div>
+            <div class="orders-item-r">
+              <div class="orders-item-status order-status-1">Принят, ожидается оплата</div>
+              <div class="orders-item-controls"><a class="btn btn-3" href="#">Скачать счет</a><a class="btn btn-3" href="#">Отменить заказ</a></div>
+            </div>
+          </div>
+          <div class="orders-item">
+            <div class="orders-item-l">
+              <div class="h4">Заказ №4570 от 15.07.2016</div>
+              <table class="order-info-table">
+                <tr>
+                  <td class="name">Сумма к оплате</td>
+                  <td class="val">13 300 руб.</td>
+                </tr>
+                <tr>
+                  <td class="name">Оплачен</td>
+                  <td class="val">Нет</td>
+                </tr>
+                <tr>
+                  <td class="name">Способ оплаты</td>
+                  <td class="val">Наличные курьеру</td>
+                </tr>
+                <tr>
+                  <td class="name">Доставка</td>
+                  <td class="val">Доставка курьером</td>
+                </tr>
+                <tr>
+                  <td class="name">Состав заказа</td>
+                  <td class="val">
+                    <p>Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01</p>
+                    <p>SE12261b</p>
+                  </td>
+                </tr>
+              </table>
+              <div class="order-more-link"><a href="#">Подробнее о заказе</a></div>
+            </div>
+            <div class="orders-item-r">
+              <div class="orders-item-status order-status-1">Принят, ожидается оплата</div>
+              <div class="orders-item-controls"><a class="btn btn-3" href="#">Скачать счет</a><a class="btn btn-3" href="#">Отменить заказ</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="h4">Заказы в статусе <span>«Оплачен»</span></div>
+        <p class="top-pull">Заказ принят, но пока не обрабатывается (например, заказ только что создан или ожидается оплата заказа)</p>
+        <div class="orders-item">
+          <div class="orders-item-l">
+            <div class="h4">Заказ №4570 от 15.07.2016</div>
+            <table class="order-info-table">
+              <tr>
+                <td class="name">Сумма к оплате</td>
+                <td class="val">13 300 руб.</td>
+              </tr>
+              <tr>
+                <td class="name">Оплачен</td>
+                <td class="val">Нет</td>
+              </tr>
+              <tr>
+                <td class="name">Способ оплаты</td>
+                <td class="val">Наличные курьеру</td>
+              </tr>
+              <tr>
+                <td class="name">Доставка</td>
+                <td class="val">Доставка курьером</td>
+              </tr>
+              <tr>
+                <td class="name">Состав заказа</td>
+                <td class="val">
+                  <p>Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01</p>
+                  <p>SE12261b</p>
+                </td>
+              </tr>
+            </table>
+            <div class="order-more-link"><a href="#">Подробнее о заказе</a></div>
+          </div>
+          <div class="orders-item-r">
+            <div class="orders-item-status order-status-2">Принят, ожидается оплата</div>
+            <div class="orders-item-controls"><a class="btn btn-3" href="#">Повторить заказ</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8">
+          <div class="clearfix">
+            <div class="footer-logo"><a href="/"><img src="images/footer-logo.png"></a></div>
+            <div class="footer-subscribe">
+              <form class="footer-subscribe-form">
+                <div class="h4">Подписаться на новости</div>
+                <div class="form-group">
+                  <div class="form-field">
+                    <label class="placeholder" for="footer_subscribe_email">Введите ваш email</label>
+                    <input type="email" name="footer_subscribe_email" id="footer_subscribe_email" required>
+                  </div>
+                  <input type="submit" value="Ок">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="footer-contacts">
+            <table class="footer-contacts-table">
+              <tr>
+                <td class="name">Телефон:</td>
+                <td class="val">+7 (903) 177-06-17</td>
+              </tr>
+              <tr>
+                <td class="name">Адрес:</td>
+                <td class="val">г. Чебоксары ул. Калинина, 91</td>
+              </tr>
+              <tr>
+                <td class="name">Время работы:</td>
+                <td class="val">Пн-Пт: 10:00 - 19:00, Сб: 10:00 - 17:00</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-2">
+          <div class="footer-menu-wrapper">
+            <div class="h4"><a href="#">Каталог</a></div>
+            <ul class="footer-menu">
+              <li><a href="#">Обои</a></li>
+              <li><a href="#">Лепнина</a></li>
+              <li><a href="#">Краска</a></li>
+              <li><a href="#">Новинки</a></li>
+              <li><a href="#">Популярные</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-2">
+          <div class="footer-menu-wrapper">
+            <div class="h4"><a href="#">Информация</a></div>
+            <ul class="footer-menu">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Гарантии и возврат</a></li>
+              <li><a href="#">Вопросы и ответы</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="row">
+        <div class="col-xs-12 col-sm-2 col-sm-push-7">
+          <div class="footer-soclinks"><a class="footer-soclink-vk" href="#"></a><a class="footer-soclink-fb" href="#"></a><a class="footer-soclink-insta" href="#"></a></div>
+        </div>
+        <div class="col-xs-12 col-sm-7 col-sm-pull-2">
+          <div class="footer-copy">&copy; 2014. Салон интерьерных решений RICH ART - элитные обои, фрески, лепнина</div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <div class="footer-dev">Разработка сайта: <a href="#">Loya</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer><div class="modal fade callback-modal" id="callbackModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="h2">Заказать звонок</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="callback-form-wrapper">
+          <div class="callback-form">
+
+            <form id="callbackForm2">
+              <div class="form-item">
+                <label for="callback_2_name" class="placeholder">Ваше имя</label>
+                <input type="text" name="callback_2_name" id="callback_2_name" required >
+              </div>
+              <div class="form-item">
+                <label for="callback_2_phone" class="placeholder">Телефон</label>
+                <input type="text" name="callback_2_phone" id="callback_2_phone" class="input-phone" required>
+              </div>
+              <div class="form-footer">
+                <button type="submit" class="btn btn-1">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade success-modal" id="successModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="h2">Спасибо!</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Ваша заявка успешно отправлена.</p>
+        <p>Наши менеджеры свяжутся с вами в ближайшее время</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.nicefileinput.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/additional-methods.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/wNumb.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="js/greensock/TweenMax.min.js"></script>
+<script src="js/greensock/plugins/CSSRulePlugin.min.js"></script>
+<script src="js/greensock/plugins/ScrollToPlugin.min.js"></script>
+<script src="js/iscroll-probe.js"></script>
+<script src="js/scrollmagic/ScrollMagic.min.js"></script>
+<script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnKKzl2zYJy_aTqe-1wAI0BHOrDNvVbEY&callback=initMap" async defer></script>

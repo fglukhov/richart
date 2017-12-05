@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <style>
+    body {padding: 15px;}
+    ol {
+      list-style-type: none;
+      counter-reset: item;
+      margin: 0;
+      padding: 0;
+      }
+      
+      ol > li {
+        display: table;
+        counter-increment: item;
+        margin-bottom: 0.6em;
+      }
+      
+      ol > li:before {
+        content: counters(item, ".") ". ";
+        display: table-cell;
+        padding-right: 0.6em;
+      }
+      
+      li ol {
+        margin-top:10px;
+      }
+      li ol > li {
+      li ol > li {
+      li ol > li {
+        margin: 0;
+      }
+      
+      li ol > li:before {
+        content: counters(item, ".") " ";
+      }
+  </style>
+  <body>
+    <ol>
+      <li><a href="home.html">Главная</a></li>
+      <li><a href="typography.html">Типографика</a></li>
+      <li><a href="about.html">О RichArt</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+      <li>Каталог
+        <ol>
+          <li><a href="catalog-category.html">Каталог - Категория</a></li>
+          <li><a href="catalog-brand.html">Каталог - Бренд</a></li>
+          <li><a href="catalog-item.html">Каталог - Товар</a></li>
+        </ol>
+      </li>
+      <li><a href="account.html">Личный кабинет</a>
+        <ol>
+          <li><a href="account-profile.html">Профиль</a></li>
+          <li><a href="account-orders.html">Заказы</a></li>
+          <li><a href="account-register.html">Регистрация</a></li>
+          <li><a href="account-login.html">Логин</a></li>
+        </ol>
+      </li>
+      <li><a href="cart.html">Корзина</a>
+        <ol>
+          <li><a href="order.html">Оформление заказа</a></li>
+        </ol>
+      </li>
+      <li><a href="favorites.html">Избранное</a></li>
+      <li><a href="search.html">Поиск</a></li>
+      <li><a href="search-extended.html">Расширенный поиск</a></li>
+    </ol>
+  </body>
+</html>

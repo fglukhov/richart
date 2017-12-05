@@ -1,0 +1,78 @@
+@media only screen and (min-width:767px) {
+
+  .city-1 {
+    top: -330px;
+  }
+
+  .city-2 {
+    top: -218px;
+  }
+
+  .city-3 {
+    top: -108px;
+  }
+
+  .top-pros-list .tmb {
+    opacity: 0;
+    transform: translateY(30px) scale(.75);
+  }
+
+  .credit-pros-list .tmb {
+    opacity: 0;
+    transform: scale(.75);
+  }
+
+  .calc-slider-wrapper-1 {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  .calc-slider-wrapper-2 {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  .company-pros-text {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  .company-pros {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  .work-list .tmb {
+    perspective: 500px;
+  }
+
+  .work-list .tmb-pic {
+    transform: rotateY(90deg);
+    opacity:.5;
+  }
+
+  .work-list .tmb-descr{
+    opacity:0;
+    transform: scale(.75);
+  }
+
+  .pros-list .col-xs-6 {
+    perspective: 500px;
+  }
+
+  .pros-list .tmb {
+    opacity:0;
+    transform: rotateY(90deg);
+  }
+
+  .cert-list .fancybox {
+    opacity: 0;
+    transform: scale(.75);
+  }
+
+  .clients-list {
+    opacity:0;
+    transform: translateY(200px);
+  }
+
+}

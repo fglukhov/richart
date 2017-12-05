@@ -1,0 +1,506 @@
+$text-color: #918c8e;
+
+$text-color-hl: #debf87;
+
+$h-color: #181416;
+
+$dark-bg-color: #181416;
+
+$dark-bg-text-color: #ffffff;
+
+$dark-bg-link-color: #ffffff;
+
+$dark-bg-h-color: #fbe9ca;
+
+$dark-bg-submit-color: #fbe9ca;
+
+$main-color-1: #f7d496;
+
+$border-color-gray-1: #e7e7e7;
+
+$placeholder-color: #928d90;
+
+$link-color: #fbe9ca;
+
+@font-face {
+    font-family: 'gotham_pro';
+    src: url('../fonts/gothampro-webfont.eot');
+    src: url('../fonts/gothampro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothampro-webfont.woff') format('woff'),
+         url('../fonts/gothampro-webfont.ttf') format('truetype'),
+         url('../fonts/gothampro-webfont.svg#gotham_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gotham_pro';
+    src: url('../fonts/gothampro-black-webfont.eot');
+    src: url('../fonts/gothampro-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothampro-black-webfont.woff') format('woff'),
+         url('../fonts/gothampro-black-webfont.ttf') format('truetype'),
+         url('../fonts/gothampro-black-webfont.svg#gotham_problack') format('svg');
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gotham_pro';
+    src: url('../fonts/gothampro-bold-webfont.eot');
+    src: url('../fonts/gothampro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothampro-bold-webfont.woff') format('woff'),
+         url('../fonts/gothampro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/gothampro-bold-webfont.svg#gotham_probold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gotham_pro';
+    src: url('../fonts/gothampro-light-webfont.eot');
+    src: url('../fonts/gothampro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothampro-light-webfont.woff') format('woff'),
+         url('../fonts/gothampro-light-webfont.ttf') format('truetype'),
+         url('../fonts/gothampro-light-webfont.svg#gotham_prolight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gotham_pro';
+    src: url('../fonts/gothampro-medium-webfont.eot');
+    src: url('../fonts/gothampro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothampro-medium-webfont.woff') format('woff'),
+         url('../fonts/gothampro-medium-webfont.ttf') format('truetype'),
+         url('../fonts/gothampro-medium-webfont.svg#gotham_promedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'open_sans';
+  src: url('../fonts/opensans-bold-webfont.eot');
+  src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-bold-webfont.woff') format('woff'),
+  url('../fonts/opensans-bold-webfont.ttf') format('truetype'),
+  url('../fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'open_sans';
+  src: url('../fonts/opensans-light-webfont.eot');
+  src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-light-webfont.woff') format('woff'),
+  url('../fonts/opensans-light-webfont.ttf') format('truetype'),
+  url('../fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'open_sans';
+  src: url('../fonts/opensans-regular-webfont.eot');
+  src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-regular-webfont.woff') format('woff'),
+  url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+  url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'open_sans';
+  src: url('../fonts/opensans-semibold-webfont.eot');
+  src: url('../fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-semibold-webfont.woff') format('woff'),
+  url('../fonts/opensans-semibold-webfont.ttf') format('truetype'),
+  url('../fonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+html,
+body {
+  font-family: "gotham_pro", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+  color: $text-color;
+}
+
+* {
+  outline:none !important;
+}
+
+/* Buttons */
+
+.btn {
+
+}
+
+/* Buttons END */
+
+/* Forms */
+
+.form-item {
+  position: relative;
+}
+
+.form-field {
+  position: relative;
+}
+
+label.placeholder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 100%;
+}
+
+.footer-subscribe-form label.placeholder {
+  font-family:"open_sans";
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+  color: $placeholder-color;
+  padding:12px 15px 12px 15px;
+}
+
+.footer-subscribe-form input[type=text],
+.footer-subscribe-form input[type=email] {
+  background: #fff;
+  border: none;
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  line-height: 25px;
+  color: $h-color;
+  font-weight: bold;
+  padding: 12px 15px 12px 15px;
+}
+
+.footer-subscribe-form .form-field {
+  width: 300px;
+}
+
+.footer-subscribe-form input[type=submit] {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background: $dark-bg-submit-color;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $h-color;
+  width: 70px;
+  height: 50px;
+}
+
+.footer-subscribe-form label.error {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+/* Forms END */
+
+
+.header-top {
+  background: $dark-bg-color;
+  color: $dark-bg-text-color;
+}
+
+.header-top a,
+.header-top a:focus {
+  color: $dark-bg-text-color;
+}
+
+.navbar-trigger {
+  position: relative;
+  width: 25px;
+  height:21px;
+  margin:15px 0 0 0;
+}
+
+.navbar-trigger span {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.navbar-trigger span:nth-child(2) {
+  top: 50%;
+  margin-top: -1px;
+}
+
+.navbar-trigger span:nth-child(3) {
+  top: auto;
+  bottom: 0;
+}
+
+.navbar-nav {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing:.05em;
+  text-align: center;
+  float: none;
+  font-size: 0;
+}
+
+.navbar-nav > li {
+  font-size: 14px;
+  line-height:24px;
+  display: inline-block;
+  position: relative;
+  float: none;
+  position: relative;
+  padding: 0 12px;
+}
+
+.navbar-nav > li + li:after {
+  content:"";
+  width: 2px;
+  height: 2px;
+  background: $main-color-1;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  margin-top: -3px;
+}
+
+.navbar-nav > li > a {
+  font-weight: 500 !important;
+  padding: 14px 15px 17px 15px;
+  display: inline-block;
+  position: relative;
+  background: none !important;
+}
+
+.navbar-nav > li > a:after {
+  content:"";
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: 0;
+  height: 0;
+  background: $main-color-1;
+  transition: height .2s ease;
+}
+
+.navbar-nav > li > a:hover:after,
+.navbar-nav > li > a.active:after {
+  height: 5px;
+}
+
+.header-user {
+  text-align: right;
+  padding: 16px 0 8px 0;
+}
+
+.header-user-btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  position: relative;
+}
+
+.header-user-btn .ico {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.header-user-btn:after {
+  content:"";
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 7px;
+  height: 7px;
+  border-right:1px solid #fff;
+  border-bottom:1px solid #fff;
+}
+
+.header-bottom-content {
+  border-bottom:1px solid $border-color-gray-1;
+}
+
+.header-logo {
+  padding:45px 0 49px 0;
+}
+
+.header-contacts {
+  padding: 48px 0 54px 0;
+}
+
+.header-contacts-phone {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+  color: $h-color;
+  letter-spacing:.025em;
+}
+
+.header-contacts-phone a {
+  color: $h-color;
+  text-decoration: none !important;
+}
+
+.header-contacts-timetable {
+  font-family:"open_sans", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-color-hl;
+}
+
+.header-controls {
+  font-size: 0;
+  float: right;
+  padding: 43px 0 43px 0;
+}
+
+.header-controls-item {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  padding: 10px 0 0 0;
+}
+
+.header-controls-item + .header-controls-item {
+  margin-left: 25px;
+}
+
+.header-controls-item > a {
+  display: block;
+}
+
+.header-controls-count {
+  position: absolute;
+  left: 100%;
+  top: -10px;
+  margin-left: -3px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  min-width: 19px;
+  height: 19px;
+  color: $dark-bg-text-color;
+  background: $dark-bg-color;
+  font-size: 12px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.header-controls-item .ico {
+  font-size: 20px;
+  line-height: 20px;
+  color: $h-color;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.header-controls-item .ttl {
+  font-size: 9px;
+  line-height: 15px;
+  letter-spacing:.075em;
+  text-transform: uppercase;
+  color: $h-color;
+  padding: 3px 0 0 0;
+}
+
+footer {
+  background: $dark-bg-color;
+  color: $dark-bg-text-color;
+}
+
+.footer-top {
+  padding: 51px 0 0 0;
+}
+
+footer h4,
+footer .h4 {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing:.025em;
+  margin: 0 0 26px 0;
+}
+
+footer h4 a,
+footer .h4 a {
+  color: $dark-bg-h-color;
+}
+
+ul.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.footer-menu a {
+  color: $dark-bg-text-color;
+  text-decoration: none;
+}
+
+ul.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+ul.footer-menu > li {
+  margin: 0 0 13px 0;
+}
+
+.footer-logo {
+  float: left;
+  width: 250px;
+  padding: 2px 0 0 0;
+}
+
+.footer-subscribe {
+  float: left;
+  width: 370px;
+}
+
+.footer-subscribe h4,
+.footer-subscribe .h4 {
+  margin-bottom: 24px;
+}
+
+.footer-contacts {
+  clear: both;
+  padding:42px 0 0 0;
+}

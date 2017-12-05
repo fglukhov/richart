@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rich Art</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/simple-line-icons.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/retina.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <div id="mobile-indicator"></div>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-1">
+            <div class="header-menu-trigger" data-target=".header-menu-l"><span></span><span></span><span></span></div>
+            <div class="header-menu header-menu-l">
+              <ul>
+                <li><a href="#">Структура компании</a></li>
+                <li><a href="#">О Richart</a></li>
+                <li><a href="#">Бренды</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Партнерская программа</a></li>
+              </ul>
+            </div>
+            <div class="navbar-trigger"><span></span><span></span><span></span></div>
+          </div>
+          <div class="col-xs-12 col-sm-10">
+            <div class="nav collapse navbar-collapse" id="bs-navbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Обои</a></li>
+                <li><a href="#">Лепнина</a></li>
+                <li><a href="#">Краска</a></li>
+                <li><a href="#">Richartlife</a></li>
+                <li><a class="active" href="#">О Richart</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-1">
+            <div class="header-user">
+              <div class="header-user-btn" data-target=".header-menu-r">
+                <div class="ico icon-user"></div>
+              </div>
+            </div>
+            <div class="header-menu header-menu-r">
+              <ul>
+                <li><a href="#">Профиль</a></li>
+                <li><a href="#">Заказы</a></li>
+                <li><a href="#">Выйти</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="header-bottom-content">
+          <div class="row">
+            <div class="col-xs-12 col-sm-2">
+              <div class="header-logo"><a href="/"><img src="images/logo.png" alt="Rich Art"><img class="logo-mobile" src="images/logo-mobile.png" alt="Rich Art"></a></div>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+              <div class="header-contacts">
+                <div class="header-contacts-phone"><a href="tel:+7835264-08-18">+7 8352 64-08-18</a></div>
+                <div class="header-contacts-timetable">c 09:00 до 21:00 ежедневно</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+              <div class="header-controls">
+                <div class="header-controls-item"><a href="#">
+                    <div class="ico-wrapper">
+                      <div class="ico icon-magnifier"></div>
+                    </div>
+                    <div class="ttl">Поиск</div></a></div>
+                <div class="header-controls-item"><a href="#">
+                    <div class="ico-wrapper">
+                      <div class="ico icon-list">
+                        <div class="header-controls-count">2</div>
+                      </div>
+                    </div>
+                    <div class="ttl">Сравнение</div></a></div>
+                <div class="header-controls-item"><a href="#">
+                    <div class="ico-wrapper">
+                      <div class="ico icon-basket">
+                        <div class="header-controls-count">5</div>
+                      </div>
+                    </div>
+                    <div class="ttl">Корзина</div></a>
+                  <!-- Cart popup-->
+                  <div class="cart-popup">
+                    <div class="cart-popup-content">
+                      <div class="cart-list">
+                        <div class="cart-tmb">
+                          <div class="row">
+                            <div class="cart-tmb-pic"><a class="pic" href="#" style="background-image:url(files/catalog-tmb-1.jpg);"></a></div>
+                            <div class="cart-tmb-descr"><a href="#">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</a></div>
+                            <div class="cart-tmb-price">
+                              <div class="price">20 412 <span class="units">&#8381;</span></div>
+                              <div class="cart-tmb-count">1 шт.</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart-tmb">
+                          <div class="row">
+                            <div class="cart-tmb-pic"><a class="pic" href="#" style="background-image:url(files/catalog-tmb-2.jpg);"></a></div>
+                            <div class="cart-tmb-descr"><a href="#">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01</a></div>
+                            <div class="cart-tmb-price">
+                              <div class="price">15 000 <span class="units">&#8381;</span></div>
+                              <div class="cart-tmb-count">1 шт.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart-popup-footer">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6">
+                            <div class="btn btn-1 cart-popup-close">Свернуть</div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6"><a class="btn btn-2" href="#">Оформить заказ</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
+<div class="main">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Корзина</a></li>
+      <li>Оформление заказа</li>
+    </ul>
+    <div class="page-content">
+      <h1>Оформление заказа <br class='hidden-sm hidden-md hidden-lg'><a href='#'>Я уже покупал</a></h1>
+      <div class="order-form">
+        <form>
+          <div class="row">
+            <div class="col-xs-12 col-sm-7 col-md-8">
+              <div class="order-form-wrapper">
+                <div class="form-section">
+                  <div class="form-group">
+                    <div class="form-item">
+                      <label for="order_name">Имя</label>
+                      <input type="text" id="order_name" name="order_name" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <div class="form-item">
+                          <label for="order_email">Email</label>
+                          <input type="email" id="order_email" name="order_email" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <div class="form-item">
+                          <label for="order_phone">Телефон</label>
+                          <input class="input-phone" type="text" id="order_phone" name="order_phone">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="form-group">
+                    <div class="form-item">
+                      <label for="order_name">Населённый пункт</label>
+                      <input type="text" id="order_name" name="order_name" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-item">
+                      <label for="order_name">Адрес</label>
+                      <input type="text" id="order_name" name="order_name" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="form-group form-group-expandable">
+                    <div class="form-group-expandable-trigger"><span data-expand-text="Добавить комментарий к заказу" data-collapse-text="Удалить комментарий">Добавить комментарий к заказу</span></div>
+                    <div class="form-item">
+                      <label for="order_message">Ваше сообщение</label>
+                      <textarea id="order_message" name="order_message" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="form-group">
+                    <div class="form-item form-item-checkbox">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="register_subscribe" name="register_subscribe" checked>
+                        <label for="register_subscribe">Подписаться на новости и скидки</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-item form-item-checkbox">
+                      <div class="form-checkbox">
+                        <input type="checkbox" id="register_agree" name="register_agree" required checked>
+                        <label for="register_agree">Я принимаю условия <a href='#'>Публичной оферты</a> и <a href='#'>Политики конфеденциальности</a></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hr"></div>
+                <div class="form-section">
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="h4">Адрес и способ доставки</div>
+                      <div class="form-group">
+                        <!-- Цена доставки - в атрибуте data-price-->
+                        <div class="form-radios-text clearfix">
+                          <div class="form-radio-text">
+                            <input type="radio" id="order_shipping_1" name="order_shipping_1" value="1" checked data-price="500">
+                            <label for="order_shipping_1">
+                              <div class="cont">Самовывоз из магазина</div>
+                            </label>
+                          </div>
+                          <div class="form-radio-text">
+                            <input type="radio" id="order_shipping_2" name="order_shipping_1" value="2" data-price="600">
+                            <label for="order_shipping_2">
+                              <div class="cont">Доставка ТК до терминала</div>
+                            </label>
+                          </div>
+                          <div class="form-radio-text">
+                            <input type="radio" id="order_shipping_3" name="order_shipping_1" value="3" data-price="700">
+                            <label for="order_shipping_3">
+                              <div class="cont">Доставка по г.&nbsp;Чебоксары, г.&nbsp;Новочебок-сарск</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-radios-descr">
+                          <div class="form-radios-descr-item" data-radio="order_shipping_1" style="display:block;">
+                            <div class="h4">Самовывоз из магазина</div>
+                            <p>г. Чебоксары, ул. Калинина, 91</p>
+                          </div>
+                          <div class="form-radios-descr-item" data-radio="order_shipping_2">
+                            <div class="h4">Доставка ТК</div>
+                            <p>текст текст текст</p>
+                          </div>
+                          <div class="form-radios-descr-item" data-radio="order_shipping_3">
+                            <div class="h4">Доставка по городу</div>
+                            <p>текст текст текст</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="h4">Способ оплаты</div>
+                      <div class="form-group">
+                        <div class="form-radios-text clearfix">
+                          <div class="form-radio-text">
+                            <input type="radio" id="order_payment_1" name="order_payment_1" value="1" checked>
+                            <label for="order_payment_1">
+                              <div class="cont">Банковские карты</div>
+                            </label>
+                          </div>
+                          <div class="form-radio-text">
+                            <input type="radio" id="order_payment_2" name="order_payment_1" value="2">
+                            <label for="order_payment_2">
+                              <div class="cont">Выставить счет на юр. лицо</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-radios-descr">
+                          <div class="form-radios-descr-item" data-radio="order_payment_1" style="display:block;">
+                            <div class="h4">Банковские карты</div>
+                            <p>г. Чебоксары, ул. Калинина, 91</p>
+                          </div>
+                          <div class="form-radios-descr-item" data-radio="order_payment_2">
+                            <div class="h4">Доставка ТК</div>
+                            <p>Оплата производится с помощью эквайринга Сбербанк и средства будут сняты с вашей банковской карты</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-4">
+              <div class="order-coupon">
+                <div class="h4">Купон<span class="tooltip-custom-wrapper"><span class="tooltip-custom-trigger tooltip-question-trigger" data-target="#couponTooltip"></span>
+                    <div class="tooltip-custom tooltip-custom-top" id="couponTooltip">
+                      <div class="arrow"></div>Текст подсказки текст подсказки
+                    </div></span></div>
+                <p>Если у вас есть промокод, введите его ниже и узнайте свою скидку</p>
+                <div class="form-group">
+                  <div class="form-item form-item-big">
+                    <input type="text" id="order_coupon" name="order_coupon">
+                    <!-- Скидка - в скрытом инпуте в процентах. Как она туда будет приходить, я не знаю-->
+                    <input type="hidden" id="order_coupon_discount" value="10">
+                  </div>
+                </div>
+              </div>
+              <div class="order-total">
+                <table class="order-total-table">
+                  <tr>
+                    <td class="name">Стоимость товаров</td>
+                    <td class="val"><span class="order-price-val">20 412</span> <span class="units">&#8381;</span></td>
+                  </tr>
+                  <tr>
+                    <td class="name">Доставка</td>
+                    <td class="val"><span class="order-shipping-val">0</span> <span class="units">&#8381;</span></td>
+                  </tr>
+                  <tr>
+                    <td class="name">Скидка</td>
+                    <td class="val">
+                      <!--размер скидки - в атрибуте data-discount--><span class="order-discount-val" data-discount="1000">
+                        1 000&nbsp;<span class="units">&#8381;</span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name">Скидка по купону</td>
+                    <td class="val"><span class="units"><span class="order-coupon-percent">-10</span>%</span> <span class="order-coupon-val">2 041</span> <span class="units">&#8381;</span></td>
+                  </tr>
+                  <tr class="order-table-sep">
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr class="order-table-footer">
+                    <td class="name">К оплате</td>
+                    <td class="val"><span class="order-total-val">17 371</span> <span class="units">&#8381;</span></td>
+                  </tr>
+                </table>
+                <div class="order-total-btn">
+                  <input class="btn btn-7" type="submit" value="Оформить заказ">
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8">
+          <div class="clearfix">
+            <div class="footer-logo"><a href="/"><img src="images/footer-logo.png"></a></div>
+            <div class="footer-subscribe">
+              <form class="footer-subscribe-form">
+                <div class="h4">Подписаться на новости</div>
+                <div class="form-group">
+                  <div class="form-field">
+                    <label class="placeholder" for="footer_subscribe_email">Введите ваш email</label>
+                    <input type="email" name="footer_subscribe_email" id="footer_subscribe_email" required>
+                  </div>
+                  <input type="submit" value="Ок">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="footer-contacts">
+            <table class="footer-contacts-table">
+              <tr>
+                <td class="name">Телефон:</td>
+                <td class="val">+7 (903) 177-06-17</td>
+              </tr>
+              <tr>
+                <td class="name">Адрес:</td>
+                <td class="val">г. Чебоксары ул. Калинина, 91</td>
+              </tr>
+              <tr>
+                <td class="name">Время работы:</td>
+                <td class="val">Пн-Пт: 10:00 - 19:00, Сб: 10:00 - 17:00</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-2">
+          <div class="footer-menu-wrapper">
+            <div class="h4"><a href="#">Каталог</a></div>
+            <ul class="footer-menu">
+              <li><a href="#">Обои</a></li>
+              <li><a href="#">Лепнина</a></li>
+              <li><a href="#">Краска</a></li>
+              <li><a href="#">Новинки</a></li>
+              <li><a href="#">Популярные</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-2">
+          <div class="footer-menu-wrapper">
+            <div class="h4"><a href="#">Информация</a></div>
+            <ul class="footer-menu">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Гарантии и возврат</a></li>
+              <li><a href="#">Вопросы и ответы</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="row">
+        <div class="col-xs-12 col-sm-2 col-sm-push-7">
+          <div class="footer-soclinks"><a class="footer-soclink-vk" href="#"></a><a class="footer-soclink-fb" href="#"></a><a class="footer-soclink-insta" href="#"></a></div>
+        </div>
+        <div class="col-xs-12 col-sm-7 col-sm-pull-2">
+          <div class="footer-copy">&copy; 2014. Салон интерьерных решений RICH ART - элитные обои, фрески, лепнина</div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <div class="footer-dev">Разработка сайта: <a href="#">Loya</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer><div class="modal fade callback-modal" id="callbackModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="h2">Заказать звонок</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="callback-form-wrapper">
+          <div class="callback-form">
+
+            <form id="callbackForm2">
+              <div class="form-item">
+                <label for="callback_2_name" class="placeholder">Ваше имя</label>
+                <input type="text" name="callback_2_name" id="callback_2_name" required >
+              </div>
+              <div class="form-item">
+                <label for="callback_2_phone" class="placeholder">Телефон</label>
+                <input type="text" name="callback_2_phone" id="callback_2_phone" class="input-phone" required>
+              </div>
+              <div class="form-footer">
+                <button type="submit" class="btn btn-1">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade success-modal" id="successModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="h2">Спасибо!</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Ваша заявка успешно отправлена.</p>
+        <p>Наши менеджеры свяжутся с вами в ближайшее время</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.nicefileinput.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/additional-methods.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/wNumb.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="js/greensock/TweenMax.min.js"></script>
+<script src="js/greensock/plugins/CSSRulePlugin.min.js"></script>
+<script src="js/greensock/plugins/ScrollToPlugin.min.js"></script>
+<script src="js/iscroll-probe.js"></script>
+<script src="js/scrollmagic/ScrollMagic.min.js"></script>
+<script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnKKzl2zYJy_aTqe-1wAI0BHOrDNvVbEY&callback=initMap" async defer></script>
