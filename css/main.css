@@ -1026,7 +1026,13 @@ iframe {
   background: #fff;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+  transition: all .3 ease;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg); }
 
 .navbar-trigger span:nth-child(2) {
   top: 50%;
@@ -1035,6 +1041,28 @@ iframe {
 .navbar-trigger span:nth-child(3) {
   top: auto;
   bottom: 0; }
+
+.navbar-trigger.active span {
+  background: #181416; }
+
+.navbar-trigger.active span:nth-child(1) {
+  top: 50%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.navbar-trigger.active span:nth-child(2) {
+  display: none; }
+
+.navbar-trigger.active span:nth-child(3) {
+  top: 50%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
 
 .navbar-collapse {
   padding-left: 0;
