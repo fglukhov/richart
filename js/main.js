@@ -56,6 +56,142 @@ $(window).resize(function () {
 
 $(document).ready(function () {
 
+  // Like
+
+  $("body").on("click",".tmb-like",function () {
+
+    if (!$(this).hasClass("active")) {
+      $(this).addClass("active");
+    } else {
+      $(this).removeClass("active");
+    }
+
+    return false;
+  });
+
+  // Compare
+
+  $("body").on("click",".tmb-compare",function () {
+
+    if (!$(this).hasClass("active")) {
+      $(this).addClass("active");
+      $(this).find(".icon-list").addClass("active");
+    } else {
+      $(this).removeClass("active");
+      $(this).find(".icon-list").removeClass("active");
+    }
+
+    return false;
+  });
+
+  // Paints catalog
+
+  $(".paint-colors-list-item").on("click",function () {
+
+
+
+    curPaintItem = $(this);
+    curColor = $(this).data("color");
+    curTtl = $(this).find(".paint-ttl").html();
+    curPrice = $(this).find(".paint-price").html();
+    
+    if ($(this).hasClass("liked")) {
+      var likedActive = " active";
+    } else {
+      var likedActive = "";
+    }
+
+    if ($(this).hasClass("incart")) {
+      var incartActive = " active";
+    } else {
+      var incartActive = "";
+    }
+
+    if ($(this).hasClass("compared")) {
+      var comparedActive = " active";
+    } else {
+      var comparedActive = "";
+    }
+    
+    if (!$(this).find(".paint-popup").length) {
+      $(".paint-popup").remove();
+      $(this).append('\
+      <div class="paint-popup">\
+        <div class="close"></div>\
+        <div class="paint-popup-color" style="background-color:' + curColor +'">\
+          <a href="#" class="tmb-like' + likedActive + '"></a>\
+        </div>\
+        <div class="tmb-ttl">' + curTtl + '</div>\
+        <div class="tmb-price">' + curPrice + ' <span class="units">&#8381;</span></div>\
+        <div class="tmb-compare' + comparedActive + '"><a class="icon-list' + comparedActive + '" href="#"></a></div>\
+        <div class="tmb-cart' + incartActive + '"><a class="icon-basket' + incartActive + '" href="#"></a></div>\
+      </div>\
+      ');
+    }
+
+
+  });
+
+  // Add to cart paint
+
+  $("body").on("click", ".paint-popup .tmb-cart", function () {
+    $(this).addClass("active");
+    $(this).find(".icon-basket").addClass("active")
+
+    if ($(".add-to-cart-paint-modal").length) {
+      $(".add-to-cart-paint-modal").remove();
+    }
+
+    var cartColor = $(this).closest(".paint-colors-list-item").data("color"),
+      cartFullTtl = $(this).closest(".paint-colors-list-item").find(".full-ttl").html(),
+      cartPrice = $(this).closest(".paint-popup").find(".tmb-price").html();
+
+
+    $("body").append('\
+      <div class="modal fade add-to-cart-paint-modal" tabindex="-1" role="dialog" id="addToCartModal">\
+        <div class="modal-dialog">\
+          <div class="modal-content loading">\
+            <div class="close" data-dismiss="modal"></div>\
+            <div class="add-to-cart">\
+              <div class="add-to-cart-header">\
+                <div class="h4">Товар добавлен в заказ</div>\
+                <div class="sub-ttl">\
+                  Всего в вашей корзине 2 заказа. <a href="#">Просмотреть</a>\
+                </div>\
+              </div>\
+              <div class="cart-list">\
+                <div class="cart-tmb">\
+                  <div class="row">\
+                    <div class="cart-tmb-pic"><div class="cart-tmb-color" style="background-color:'+cartColor+'"></div></div>\
+                    <div class="cart-tmb-descr"><a href="#">' + cartFullTtl + '</a></div>\
+                    <div class="cart-tmb-price">\
+                      <div class="price">' + cartPrice + ' <span class="units">&#8381;</span></div>\
+                      <div class="cart-tmb-count">1 шт.</div>\
+                    </div>\
+                  </div>\
+                </div>\
+              </div>\
+              <div class="add-to-cart-footer">\
+                <div class="btn btn-1">Продолжить выбор</div>\
+                <a href="#" class="btn btn-2">Оформить заказ</a>\
+              </div>\
+            </div>\
+          </div>\
+        </div>\
+      </div>\
+    ');
+
+    $(".add-to-cart-paint-modal").modal("show");
+
+
+    return false;
+
+  });
+
+  $("body").on("click",".paint-popup .close",function () {
+    $(this).closest(".paint-popup").remove();
+  });
+
   // Mobile nav
 
   $(".navbar-trigger").on("click",function () {
@@ -192,7 +328,7 @@ $(document).ready(function () {
 
   // Add to cart
 
-  $("body").on("click", ".tmb-cart", function () {
+  $("body").on("click", ".catalog-tmb .tmb-cart", function () {
     $(this).addClass("active");
     $(this).find(".icon-basket").addClass("active")
 
