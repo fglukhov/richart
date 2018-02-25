@@ -24,7 +24,6 @@
             <div class="header-menu-trigger" data-target=".header-menu-l"><span></span><span></span><span></span></div>
             <div class="header-menu header-menu-l">
               <ul>
-                <li><a href="#">Структура компании</a></li>
                 <li><a href="#">О Richart</a></li>
                 <li><a href="#">Бренды</a></li>
                 <li><a href="#">Контакты</a></li>
@@ -32,6 +31,7 @@
               </ul>
             </div>
             <div class="navbar-trigger"><span></span><span></span><span></span></div>
+            <div class="header-ttl"><a href="#">Rich Art</a></div>
           </div>
           <div class="col-xs-12 col-sm-10">
             <div class="nav collapse navbar-collapse" id="bs-navbar">
@@ -47,7 +47,6 @@
                   <li><a href="#">Контакты</a></li>
                 </ul>
                 <ul class="nav navbar-nav hidden-sm hidden-md hidden-lg">
-                  <li><a href="#">Структура компании</a></li>
                   <li><a href="#">О Richart</a></li>
                   <li><a href="#">Бренды</a></li>
                   <li><a href="#">Контакты</a></li>
@@ -83,7 +82,7 @@
             <div class="col-xs-12 col-sm-5">
               <div class="header-contacts">
                 <div class="header-contacts-phone"><a href="tel:+7835264-08-18">+7 8352 64-08-18</a></div>
-                <div class="header-contacts-timetable">c 09:00 до 21:00 ежедневно</div>
+                <div class="header-contacts-timetable"><a href="#" data-toggle="modal" data-target="#callbackModal">заказать обратный звонок</a></div>
               </div>
             </div>
             <div class="col-xs-12 col-sm-5">
@@ -93,6 +92,13 @@
                       <div class="ico icon-magnifier"></div>
                     </div>
                     <div class="ttl">Поиск</div></a></div>
+                <div class="header-controls-item"><a href="#">
+                    <div class="ico-wrapper">
+                      <div class="ico icon-fav">
+                        <div class="header-controls-count">8</div>
+                      </div>
+                    </div>
+                    <div class="ttl">Избранное</div></a></div>
                 <div class="header-controls-item"><a href="#">
                     <div class="ico-wrapper">
                       <div class="ico icon-list">
@@ -232,10 +238,11 @@
   </div>
 </div>
 <footer>
+  <div class="up-button">Наверх</div>
   <div class="container">
     <div class="footer-top">
       <div class="row">
-        <div class="col-xs-12 col-sm-8">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8">
           <div class="clearfix">
             <div class="footer-logo"><a href="/"><img src="images/footer-logo.png"></a></div>
             <div class="footer-subscribe">
@@ -252,23 +259,13 @@
             </div>
           </div>
           <div class="footer-contacts">
-            <table class="footer-contacts-table">
-              <tr>
-                <td class="name">Телефон:</td>
-                <td class="val">+7 (903) 177-06-17</td>
-              </tr>
-              <tr>
-                <td class="name">Адрес:</td>
-                <td class="val">г. Чебоксары ул. Калинина, 91</td>
-              </tr>
-              <tr>
-                <td class="name">Время работы:</td>
-                <td class="val">Пн-Пт: 10:00 - 19:00, Сб: 10:00 - 17:00</td>
-              </tr>
-            </table>
+            <p>+7 (903) 177-06-17</p>
+            <p>г. Чебоксары ул. Калинина, 91</p>
+            <p>Пн-Пт: 10:00 - 19:00, Сб: 10:00 - 17:00</p>
           </div>
+          <div class="footer-soclinks"><a class="footer-soclink-vk" href="#"></a><a class="footer-soclink-fb" href="#"></a><a class="footer-soclink-insta" href="#"></a></div>
         </div>
-        <div class="col-xs-6 col-sm-2">
+        <div class="col-xs-6 col-sm-3 col-lg-2">
           <div class="footer-menu-wrapper">
             <div class="h4"><a href="#">Каталог</a></div>
             <ul class="footer-menu">
@@ -281,7 +278,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-xs-6 col-sm-2">
+        <div class="col-xs-6 col-sm-3 col-lg-2">
           <div class="footer-menu-wrapper">
             <div class="h4"><a href="#">Информация</a></div>
             <ul class="footer-menu">
@@ -295,19 +292,17 @@
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="row">
-        <div class="col-xs-12 col-sm-2 col-sm-push-7">
-          <div class="footer-soclinks"><a class="footer-soclink-vk" href="#"></a><a class="footer-soclink-fb" href="#"></a><a class="footer-soclink-insta" href="#"></a></div>
-        </div>
-        <div class="col-xs-12 col-sm-7 col-sm-pull-2">
-          <div class="footer-copy">&copy; 2014. Салон интерьерных решений RICH ART - элитные обои, фрески, лепнина</div>
-        </div>
-        <div class="col-xs-12 col-sm-3">
-          <div class="footer-dev">Разработка сайта: <a href="#">Loya</a></div>
-        </div>
-      </div>
-    </div>
+    <!--.footer-bottom-->
+    <!---->
+    <!--  .row-->
+    <!--    .col-xs-12.col-sm-2.col-sm-push-7-->
+    <!---->
+    <!--    .col-xs-12.col-sm-7.col-sm-pull-2-->
+    <!--      .footer-copy-->
+    <!--        | &copy; 2014. Салон интерьерных решений RICH ART - элитные обои, фрески, лепнина-->
+    <!--    .col-xs-12.col-sm-3-->
+    <!--      .footer-dev-->
+    <!--        | Разработка сайта: #[a(href='#') Loya]-->
   </div>
 </footer><div class="modal fade callback-modal" id="callbackModal" tabindex="-1">
   <div class="modal-dialog">
@@ -321,16 +316,20 @@
           <div class="callback-form">
 
             <form id="callbackForm2">
-              <div class="form-item">
-                <label for="callback_2_name" class="placeholder">Ваше имя</label>
-                <input type="text" name="callback_2_name" id="callback_2_name" required >
+              <div class="form-group">
+                <div class="form-item">
+                  <label for="callback_name">Ваше имя</label>
+                  <input type="text" name="callback_name" id="callback_name" required>
+                </div>
               </div>
-              <div class="form-item">
-                <label for="callback_2_phone" class="placeholder">Телефон</label>
-                <input type="text" name="callback_2_phone" id="callback_2_phone" class="input-phone" required>
+              <div class="form-group">
+                <div class="form-item">
+                  <label for="callback_phone">Телефон</label>
+                  <input type="text" name="callback_phone" id="callback_phone" class="input-phone" required>
+                </div>
               </div>
               <div class="form-footer">
-                <button type="submit" class="btn btn-1">Отправить</button>
+                <button type="submit" class="btn btn-2">Отправить</button>
               </div>
             </form>
           </div>

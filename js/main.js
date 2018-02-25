@@ -6,6 +6,12 @@ $(window).scroll(function () {
 
   var scrollPos = $(window).scrollTop();
 
+  if (scrollPos > 300) {
+    $(".up-button").fadeIn(250);
+  } else {
+    $(".up-button").fadeOut(250);
+  }
+
   if ($("#sectionVideoDescr").length) {
 
     if ($("#sectionVideoDescr").offset().top + $("#sectionVideoDescr").outerHeight() < scrollPos) {
@@ -17,7 +23,10 @@ $(window).scroll(function () {
   }
 
 
-  //parallax($("#sectionVideoDescr"), -100, 2);
+  parallax($("#homeSectionDescr1"), 50, .5);
+  parallax($("#homeSectionDescr2"), 500, .5);
+  parallax($("#sectionVideoDescr"), 300, .5);
+
 
   if ($(".home-section-video-wrapper").length) {
 
@@ -55,6 +64,16 @@ $(window).resize(function () {
 });
 
 $(document).ready(function () {
+
+  // Up button
+
+  $(".up-button").click(function () {
+
+    $("body, html").animate({
+      scrollTop: 0
+    },500);
+
+  });
 
   // Like
 
@@ -279,7 +298,17 @@ $(document).ready(function () {
   $(".brands-slider").slick({
     slidesToShow: 5,
     slidesToScroll: 4,
-    arrows: false
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: true
+        }
+      }
+    ]
   });
 
   // Main slider
@@ -1056,7 +1085,7 @@ function resizeVideo() {
 
 function parallax(obj, objOffset, speed) {
 
-  var objPos = - $(window).scrollTop() + obj.closest(".parallax-wrapper").offset().top + objOffset
+  var objPos = (- $(window).scrollTop() + obj.closest(".parallax-base").offset().top)*speed + objOffset
 
   obj.css({
     transform: "translateY(" + objPos + "px)"
