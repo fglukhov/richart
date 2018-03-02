@@ -2468,7 +2468,7 @@ table.catalog-item-data td.val {
 
 .info-message {
   position: relative;
-  padding: 0 0 0 60px;
+  padding: 0 0 0 0;
   margin: 18px 0 23px 0;
   line-height: 24px; }
 
@@ -2487,7 +2487,7 @@ table.catalog-item-data td.val {
   margin: 24px 0 19px 0; }
 
 .catalog-item-controls {
-  margin: 25px 0 52px 0; }
+  margin: 25px 0 28px 0; }
 
 .catalog-item-controls .btn {
   width: 100%; }
@@ -2509,7 +2509,8 @@ ul.features-list .ico {
 
 .features-row {
   display: table;
-  width: 100%; }
+  width: 100%;
+  margin-top: 52px; }
 
 .features-cell {
   display: table-cell; }
@@ -3956,7 +3957,7 @@ hr {
   top: 0; }
 
 .paint-colors-wrapper {
-  margin: 75px 0 43px 0; }
+  margin: 30px 0 108px 0; }
 
 .paint-colors-logo {
   background: #f7d496;
@@ -3968,7 +3969,7 @@ hr {
 
 .paint-colors-list {
   border: 1px solid #f7d496;
-  padding: 9px 7px 7px 9px;
+  padding: 8px 6px 7px 7px;
   font-size: 0;
   line-height: 0; }
 
@@ -4164,7 +4165,7 @@ hr {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -4px;
+  margin-left: -3px;
   margin-top: -4px; }
 
 .up-button {
@@ -4237,3 +4238,159 @@ table.compare-table th:last-child {
 
 .compare-table .catalog-tmb {
   margin: 0; }
+
+.catalog-pic-paint-pic {
+  position: relative; }
+
+.catalog-pic-paint-pic .tmb-like {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  cursor: pointer; }
+
+.catalog-pic-paint-pic .tmb-like:after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 18px;
+  background: url(../images/icon-heart.png) 0 0 no-repeat;
+  -webkit-background-size: 42px auto;
+  background-size: 42px auto;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.catalog-pic-paint-pic .tmb-like:hover:after {
+  background-position: -21px 0; }
+
+.catalog-pic-paint-pic .tmb-like.active:after {
+  background-position: 0 -18px; }
+
+.catalog-pic-paint-pic .tmb-like.active:hover:after {
+  background-position: -21px -18px; }
+
+.catalog-pic-paint-pic .tmb-like:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.catalog-pic-paint-pic img {
+  width: 100%; }
+
+.catalog-pic-paint-color {
+  height: 270px;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  text-align: center;
+  font-weight: 500;
+  color: #181416;
+  background-color: #fcf8f3; }
+
+.catalog-pic-paint-color .cont {
+  display: table-cell;
+  width: 270px;
+  height: 270px;
+  vertical-align: middle; }
+
+table.catalog-price-table {
+  width: 100%;
+  margin: 33px 0 45px 0; }
+
+table.catalog-price-table td {
+  vertical-align: top; }
+
+table.catalog-price-table .td-name {
+  width: 43%;
+  padding: 1px 15px 0 0; }
+
+table.catalog-price-table .td-count {
+  width: 24%;
+  padding: 0 0 10px 0; }
+
+table.catalog-price-table .td-price {
+  white-space: nowrap;
+  text-align: right;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #181416;
+  padding: 9px 0 0 0; }
+
+table.catalog-price-table .td-price.inactive {
+  color: #e1e1e1; }
+
+table.catalog-price-table .td-price span.units {
+  font-weight: normal; }
+
+table.catalog-price-table .td-name .value {
+  font-size: 15px;
+  line-height: 20px;
+  color: #181416;
+  font-weight: bold; }
+
+table.catalog-price-table .td-name .sup-ttl {
+  font-size: 12px;
+  line-height: 20px;
+  color: #918c8e;
+  font-weight: 300; }
+
+.count-element {
+  border: 1px solid #f0e0c3;
+  border-radius: 3px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #181416;
+  padding: 9px 35px 9px 17px;
+  position: relative; }
+
+.count-plus {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: 20px;
+  top: 4px;
+  cursor: pointer; }
+
+.count-plus:before {
+  content: "";
+  background: url(../images/arrow-up.png) 0 0 no-repeat;
+  width: 10px;
+  height: 6px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -3px; }
+
+.count-minus {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: 20px;
+  bottom: 4px;
+  cursor: pointer; }
+
+.count-minus:before {
+  content: "";
+  background: url(../images/arrow-down.png) 0 0 no-repeat;
+  width: 10px;
+  height: 6px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -3px; }
