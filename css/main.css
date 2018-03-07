@@ -71,6 +71,9 @@ body {
   color: #918c8e;
   min-width: 480px; }
 
+.container {
+  min-width: 480px; }
+
 * {
   outline: none !important; }
 
@@ -4394,3 +4397,6 @@ table.catalog-price-table .td-name .sup-ttl {
   left: 50%;
   top: 50%;
   margin-top: -3px; }
+
+.margin-top {
+  margin-top: 70px; }

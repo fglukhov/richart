@@ -272,6 +272,8 @@
     color: #181416; }
   .header-controls-item .ico {
     color: #fff; }
+  .header-controls-item .icon-fav:before {
+    background-image: url(../images/ico-header-fav-home.png); }
   .header-top {
     position: absolute;
     width: 100%;

@@ -65,6 +65,41 @@ $(window).resize(function () {
 
 $(document).ready(function () {
 
+  // Catalog paint price
+
+  $(".catalog-price-row .count-plus, .catalog-price-row .count-minus").click(function () {
+
+    var countValEl = $(this).closest(".catalog-price-row").find(".count-element-val .val");
+    var countValInput = $(this).closest(".catalog-price-row").find("input[type=hidden]");
+
+    var countVal = countValInput.val();
+
+    var elPrice = countValEl.closest(".catalog-price-row").find(".count-element").data("price");
+
+    if ($(this).hasClass("count-plus")) {
+      countVal++;
+    } else if (countVal >= 1) {
+      countVal--;
+    }
+
+    if (countVal == 0) {
+      countValEl.closest(".catalog-price-row").find(".td-price").addClass("inactive");
+    } else {
+      countValEl.closest(".catalog-price-row").find(".td-price").removeClass("inactive");
+    }
+
+    countValEl.html(countVal);
+    countValInput.val(countVal);
+
+    if (countVal > 0) {
+      countValEl.closest(".catalog-price-row").find(".td-price .val").html(numFormat.to(elPrice * countVal));
+    } else {
+      countValEl.closest(".catalog-price-row").find(".td-price .val").html(numFormat.to(elPrice * 1));
+    }
+
+
+  });
+
   // Up button
 
   $(".up-button").click(function () {
@@ -503,7 +538,7 @@ $(document).ready(function () {
 
   // Count
 
-  $(".count-plus").click(function () {
+  $(".cart-item-count .count-plus").click(function () {
     var countInput = $(this).closest(".count").find(".count-input");
     countInput.val( + countInput.val() + 1 );
 
@@ -515,7 +550,7 @@ $(document).ready(function () {
     cartTotal();
   });
 
-  $(".count-minus").click(function () {
+  $(".cart-item-count .count-minus").click(function () {
     var countInput = $(this).closest(".count").find(".count-input");
     if (+countInput.val() > 1) {
       countInput.val( + countInput.val() - 1 );

@@ -161,211 +161,184 @@
   <div class="container">
     <ul class="breadcrumb">
       <li><a href="#">Главная</a></li>
-      <li><a href="#">Корзина</a></li>
-      <li>Оформление заказа</li>
+      <li><a href="#">Каталог</a></li>
+      <li>Обои</li>
     </ul>
-    <div class="page-content">
-      <h1>Оформление заказа <br class='hidden-sm hidden-md hidden-lg'><a href='#'>Я уже покупал</a></h1>
-      <div class="order-form">
-        <form>
-          <div class="row">
-            <div class="col-xs-12 col-sm-7 col-md-8">
-              <div class="order-form-wrapper">
-                <div class="form-section">
-                  <div class="form-group">
-                    <div class="form-item">
-                      <label for="order_name">Имя</label>
-                      <input type="text" id="order_name" name="order_name" required>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="form-group">
-                        <div class="form-item">
-                          <label for="order_email">Email</label>
-                          <input type="email" id="order_email" name="order_email" required>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="form-group">
-                        <div class="form-item">
-                          <label for="order_phone">Телефон</label>
-                          <input class="input-phone" type="text" id="order_phone" name="order_phone">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-section">
-                  <div class="form-group">
-                    <div class="form-item">
-                      <label for="order_name">Населённый пункт</label>
-                      <input type="text" id="order_name" name="order_name" required>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-item">
-                      <label for="order_name">Адрес</label>
-                      <input type="text" id="order_name" name="order_name" required>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-section">
-                  <div class="form-group form-group-expandable">
-                    <div class="form-group-expandable-trigger"><span data-expand-text="Добавить комментарий к заказу" data-collapse-text="Удалить комментарий">Добавить комментарий к заказу</span></div>
-                    <div class="form-item">
-                      <label for="order_message">Ваше сообщение</label>
-                      <textarea id="order_message" name="order_message" rows="3"></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-section">
-                  <div class="form-group">
-                    <div class="form-item form-item-checkbox">
-                      <div class="form-checkbox">
-                        <input type="checkbox" id="register_subscribe" name="register_subscribe" checked>
-                        <label for="register_subscribe">Подписаться на новости и скидки</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-item form-item-checkbox">
-                      <div class="form-checkbox">
-                        <input type="checkbox" id="register_agree" name="register_agree" required checked>
-                        <label for="register_agree">Я принимаю условия <a href='#'>Публичной оферты</a> и <a href='#'>Политики конфеденциальности</a></label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="hr"></div>
-                <div class="form-section">
-                  <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                      <div class="h4">Адрес и способ доставки</div>
-                      <div class="form-group">
-                        <!-- Цена доставки - в атрибуте data-price-->
-                        <div class="form-radios-text clearfix">
-                          <div class="form-radio-text">
-                            <input type="radio" id="order_shipping_1" name="order_shipping_1" value="1" checked data-price="500">
-                            <label for="order_shipping_1">
-                              <div class="cont">Самовывоз из магазина</div>
-                            </label>
-                          </div>
-                          <div class="form-radio-text">
-                            <input type="radio" id="order_shipping_2" name="order_shipping_1" value="2" data-price="600">
-                            <label for="order_shipping_2">
-                              <div class="cont">Доставка ТК до терминала</div>
-                            </label>
-                          </div>
-                          <div class="form-radio-text">
-                            <input type="radio" id="order_shipping_3" name="order_shipping_1" value="3" data-price="700">
-                            <label for="order_shipping_3">
-                              <div class="cont">Доставка по г.&nbsp;Чебоксары, г.&nbsp;Новочебок-сарск</div>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form-radios-descr">
-                          <div class="form-radios-descr-item" data-radio="order_shipping_1" style="display:block;">
-                            <div class="h4">Самовывоз из магазина</div>
-                            <p>г. Чебоксары, ул. Калинина, 91</p>
-                          </div>
-                          <div class="form-radios-descr-item" data-radio="order_shipping_2">
-                            <div class="h4">Доставка ТК</div>
-                            <p>текст текст текст</p>
-                          </div>
-                          <div class="form-radios-descr-item" data-radio="order_shipping_3">
-                            <div class="h4">Доставка по городу</div>
-                            <p>текст текст текст</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                      <div class="h4">Способ оплаты</div>
-                      <div class="form-group">
-                        <div class="form-radios-text clearfix">
-                          <div class="form-radio-text">
-                            <input type="radio" id="order_payment_1" name="order_payment_1" value="1" checked>
-                            <label for="order_payment_1">
-                              <div class="cont">Банковские карты</div>
-                            </label>
-                          </div>
-                          <div class="form-radio-text">
-                            <input type="radio" id="order_payment_2" name="order_payment_1" value="2">
-                            <label for="order_payment_2">
-                              <div class="cont">Выставить счет на юр. лицо</div>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form-radios-descr">
-                          <div class="form-radios-descr-item" data-radio="order_payment_1" style="display:block;">
-                            <div class="h4">Банковские карты</div>
-                            <p>г. Чебоксары, ул. Калинина, 91</p>
-                          </div>
-                          <div class="form-radios-descr-item" data-radio="order_payment_2">
-                            <div class="h4">Доставка ТК</div>
-                            <p>Оплата производится с помощью эквайринга Сбербанк и средства будут сняты с вашей банковской карты</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-5 col-md-4">
-              <div class="order-coupon">
-                <div class="h4">Купон<span class="tooltip-custom-wrapper"><span class="tooltip-custom-trigger tooltip-question-trigger" data-target="#couponTooltip"></span>
-                    <div class="tooltip-custom tooltip-custom-top" id="couponTooltip">
-                      <div class="arrow"></div>Текст подсказки текст подсказки
-                    </div></span></div>
-                <p>Если у вас есть промокод, введите его ниже и узнайте свою скидку</p>
-                <div class="form-group">
-                  <div class="form-item form-item-big">
-                    <input type="text" id="order_coupon" name="order_coupon">
-                    <!-- Скидка - в скрытом инпуте в процентах. Как она туда будет приходить, я не знаю-->
-                    <input type="hidden" id="order_coupon_discount" value="10">
-                  </div>
-                </div>
-              </div>
-              <div class="order-total">
-                <table class="order-total-table">
-                  <tr>
-                    <td class="name">Стоимость товаров</td>
-                    <td class="val"><span class="order-price-val">20 412</span> <span class="units">&#8381;</span></td>
-                  </tr>
-                  <tr>
-                    <td class="name">Доставка</td>
-                    <td class="val"><span class="order-shipping-val">0</span> <span class="units">&#8381;</span></td>
-                  </tr>
-                  <tr>
-                    <td class="name">Скидка</td>
-                    <td class="val">
-                      <!--размер скидки - в атрибуте data-discount--><span class="order-discount-val" data-discount="1000">
-                        1 000&nbsp;<span class="units">&#8381;</span></span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="name">Скидка по купону</td>
-                    <td class="val"><span class="units"><span class="order-coupon-percent">-10</span>%</span> <span class="order-coupon-val">2 041</span> <span class="units">&#8381;</span></td>
-                  </tr>
-                  <tr class="order-table-sep">
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr class="order-table-footer">
-                    <td class="name">К оплате</td>
-                    <td class="val"><span class="order-total-val">17 371</span> <span class="units">&#8381;</span></td>
-                  </tr>
-                </table>
-                <div class="order-total-btn">
-                  <input class="btn btn-7" type="submit" value="Оформить заказ">
-                </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-3 col-md-2 sidebar">
+        <div class="smart-filter">Смарт-фильтр. Делаем после сборки сайта.</div>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-10 page-content page-catalog"><!-- Слайдер -->
+        <div class="catalog-slider">
+          <div class="slide" style="background-image:url(files/catalog-slide-fretwork-1.jpg);">
+            <div class="slide-content">
+              <div class="h2">Orac decor</div>
+              <div class="slide-text">
+                <p>Каталог обоев Regal by Thibaut Baroque - коллекция бумажных обоев с акриловым напылением премиум класса.</p>
               </div>
             </div>
           </div>
-        </form>
+          <div class="slide" style="background-image:url(files/catalog-slide-2.jpg);">
+            <div class="slide-content">
+              <div class="h2">A shade wilder</div>
+              <div class="slide-text">
+                <p>Каталог обоев Regal by Thibaut Baroque - коллекция бумажных обоев с акриловым напылением премиум класса.</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide" style="background-image:url(files/catalog-slide-3.jpg);">
+            <div class="slide-content">
+              <div class="h2">A shade wilder</div>
+              <div class="slide-text">
+                <p>Каталог обоев Regal by Thibaut Baroque - коллекция бумажных обоев с акриловым напылением премиум класса.</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- Слайдер END -->
+<!-- Алфавитный указатель -->
+        <div class="alphabet-menu">
+          <div class="alphabet-menu-name">Бренды:</div>
+          <ul class="alphabet-menu-list">
+            <li><a class="active" href="#">Все</a></li>
+            <li><a class="inactive" href="#">A</a></li>
+            <li><a class="inactive" href="#">B</a></li>
+            <li><a class="inactive" href="#">C</a></li>
+            <li><a class="inactive" href="#">D</a></li>
+            <li><a class="inactive" href="#">E</a></li>
+            <li><a class="inactive" href="#">F</a></li>
+            <li><a class="inactive" href="#">G</a></li>
+            <li><a class="inactive" href="#">H</a></li>
+            <li><a class="inactive" href="#">I</a></li>
+            <li><a class="inactive" href="#">J</a></li>
+            <li><a class="inactive" href="#">K</a></li>
+            <li><a href="#">L</a></li>
+            <li><a class="inactive" href="#">M</a></li>
+            <li><a class="inactive" href="#">N</a></li>
+            <li><a href="#">O</a></li>
+            <li><a class="inactive" href="#">P</a></li>
+            <li><a class="inactive" href="#">Q</a></li>
+            <li><a class="inactive" href="#">R</a></li>
+            <li><a class="inactive" href="#">S</a></li>
+            <li><a class="inactive" href="#">T</a></li>
+            <li><a class="inactive" href="#">U</a></li>
+            <li><a class="inactive" href="#">V</a></li>
+            <li><a class="inactive" href="#">W</a></li>
+            <li><a class="inactive" href="#">X</a></li>
+            <li><a class="inactive" href="#">Y</a></li>
+            <li><a class="inactive" href="#">Z</a></li>
+          </ul>
+        </div><!-- Алфавитный указатель END -->
+<!-- Список брендов -->
+        <div class="brands-list">
+          <div class="row"><a class="brand-tmb" href="#" title="Orac">
+              <div class="tmb-pic"><img src="files/logo-brand-fretwork-1.png"/></div></a><a class="brand-tmb" href="#" title="Rodecor">
+              <div class="tmb-pic"><img src="files/logo-brand-fretwork-2.png"/></div></a>
+          </div>
+        </div><!-- Список брендов END -->
+<!-- Текст -->
+        <div class="catalog-category-text">
+          <p>Хотите купить обои в интернет-магазине, но не знаете какой магазин выбрать? Поздравляем, вы уже нашли то, что искали! Компания «Artique» поможет вам воплотить в жизнь самые смелые творческие замыслы! В нашем шоу-руме на Фрунзенской набережной, а также в интернет-магазине представлены дизайнерские обои от 70 ведущих производителей Европы, России и США. На ваш выбор 85 000 уникальных дизайнерских решений.</p>
+          <p>Формируя экспозицию выставочного зала и интернет-магазин обоев, мы постарались создать уникальный ассортимент элитных обоев. Мы не стремимся следовать сиюминутным трендам, а предпочитаем сами задавать тенденции интерьерной моды! Каталог нашего интернет-магазина эксклюзивных обоев — это настоящая находка для покупателей с изысканным художественным вкусом.</p>
+          <div class="h2">Пополуярное</div>
+          <div class="catalog catalog-short popular-catalog">
+            <div class="row">
+              <div class="catalog-tmb">
+                <div class="full-ttl">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</div><a class="tmb-like" href="#"></a><a href="#">
+                  <div class="tmb-pic" style="background-image:url(files/catalog-tmb-fretwork-1.jpg);"></div>
+                  <div class="tmb-ttl">Modern Series</div>
+                  <div class="tmb-article">арт. 01-1253</div></a>
+                <div class="tmb-price"><span class="price">20 412</span>&nbsp;<span class="units">&#8381;</span></div>
+                <div class="tmb-compare"><a class="icon-list" href="#"></a></div>
+                <div class="tmb-cart"><a class="icon-basket" href="#"></a></div>
+              </div>
+              <div class="catalog-tmb">
+                <div class="full-ttl">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</div><a class="active tmb-like" href="#"></a><a href="#">
+                  <div class="tmb-pic" style="background-image:url(files/catalog-tmb-fretwork-2.jpg);"></div>
+                  <div class="tmb-ttl">Imageine Fun</div>
+                  <div class="tmb-article">арт. 01-1254</div></a>
+                <div class="tmb-price"><span class="price">20 412</span>&nbsp;<span class="units">&#8381;</span></div>
+                <div class="tmb-compare"><a class="icon-list" href="#"></a></div>
+                <div class="tmb-cart"><a class="icon-basket" href="#"></a></div>
+              </div>
+              <div class="catalog-tmb">
+                <div class="full-ttl">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</div><a class="tmb-like" href="#"></a><a href="#">
+                  <div class="tmb-pic" style="background-image:url(files/catalog-tmb-fretwork-3.jpg);"></div>
+                  <div class="tmb-ttl">Modern Series</div>
+                  <div class="tmb-article">арт. 01-1255</div></a>
+                <div class="tmb-price"><span class="price">20 412</span>&nbsp;<span class="units">&#8381;</span></div>
+                <div class="tmb-compare"><a class="icon-list" href="#"></a></div>
+                <div class="tmb-cart"><a class="icon-basket" href="#"></a></div>
+              </div>
+              <div class="catalog-tmb">
+                <div class="full-ttl">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</div><a class="tmb-like" href="#"></a><a href="#">
+                  <div class="tmb-pic" style="background-image:url(files/catalog-tmb-fretwork-4.jpg);"></div>
+                  <div class="tmb-ttl">Imageine Fun</div>
+                  <div class="tmb-article">арт. 01-1253</div></a>
+                <div class="tmb-price"><span class="price">20 412</span>&nbsp;<span class="units">&#8381;</span></div>
+                <div class="tmb-compare active"><a class="icon-list active active" href="#"></a>
+                  <div class="catalog-tooltip">
+                    <div class="arrow"></div>Товар добавлен <a href='#'>в список сравнения</a>
+                  </div>
+                </div>
+                <div class="tmb-cart"><a class="icon-basket" href="#"></a></div>
+              </div>
+              <div class="catalog-tmb">
+                <div class="full-ttl">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</div><a class="tmb-like" href="#"></a><a href="#">
+                  <div class="tmb-pic" style="background-image:url(files/catalog-tmb-fretwork-5.jpg);"></div>
+                  <div class="tmb-ttl">Modern Series</div>
+                  <div class="tmb-article">арт. 01-1255</div></a>
+                <div class="tmb-price"><span class="price">20 412</span>&nbsp;<span class="units">&#8381;</span></div>
+                <div class="tmb-compare"><a class="icon-list" href="#"></a></div>
+                <div class="tmb-cart"><a class="icon-basket" href="#"></a></div>
+              </div>
+              <div class="catalog-tmb">
+                <div class="full-ttl">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</div><a class="tmb-like" href="#"></a><a href="#">
+                  <div class="tmb-pic" style="background-image:url(files/catalog-tmb-fretwork-6.jpg);"></div>
+                  <div class="tmb-ttl">Imageine Fun</div>
+                  <div class="tmb-article">арт. 01-1256</div></a>
+                <div class="tmb-price"><span class="price">20 412</span>&nbsp;<span class="units">&#8381;</span></div>
+                <div class="tmb-compare"><a class="icon-list" href="#"></a></div>
+                <div class="tmb-cart active"><a class="icon-basket active active" href="#"></a></div>
+              </div>
+              <div class="catalog-tmb">
+                <div class="full-ttl">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</div><a class="tmb-like" href="#"></a><a href="#">
+                  <div class="tmb-pic" style="background-image:url(files/catalog-tmb-fretwork-7.jpg);"></div>
+                  <div class="tmb-ttl">Modern Series</div>
+                  <div class="tmb-article">арт. 01-1258</div></a>
+                <div class="tmb-price"><span class="price">20 412</span>&nbsp;<span class="units">&#8381;</span></div>
+                <div class="tmb-compare"><a class="icon-list" href="#"></a></div>
+                <div class="tmb-cart"><a class="icon-basket" href="#"></a></div>
+              </div>
+              <div class="catalog-tmb">
+                <div class="full-ttl">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</div><a class="tmb-like" href="#"></a><a href="#">
+                  <div class="tmb-pic" style="background-image:url(files/catalog-tmb-fretwork-8.jpg);"></div>
+                  <div class="tmb-ttl">Imageine Fun</div>
+                  <div class="tmb-article">арт. 01-1250</div></a>
+                <div class="tmb-price"><span class="price">20 412</span>&nbsp;<span class="units">&#8381;</span></div>
+                <div class="tmb-compare"><a class="icon-list" href="#"></a></div>
+                <div class="tmb-cart"><a class="icon-basket" href="#"></a></div>
+              </div>
+              <div class="catalog-tmb">
+                <div class="full-ttl">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</div><a class="tmb-like" href="#"></a><a href="#">
+                  <div class="tmb-pic" style="background-image:url(files/catalog-tmb-fretwork-9.jpg);"></div>
+                  <div class="tmb-ttl">Modern Series</div>
+                  <div class="tmb-article">арт. 01-1259</div></a>
+                <div class="tmb-price"><span class="price">20 412</span>&nbsp;<span class="units">&#8381;</span></div>
+                <div class="tmb-compare"><a class="icon-list" href="#"></a></div>
+                <div class="tmb-cart"><a class="icon-basket" href="#"></a></div>
+              </div>
+              <div class="catalog-tmb">
+                <div class="full-ttl">Российские обои Affresco, коллекция Modern Series, артикул MLW2060-01 SE12261b</div><a class="tmb-like" href="#"></a><a href="#">
+                  <div class="tmb-pic" style="background-image:url(files/catalog-tmb-fretwork-10.jpg);"></div>
+                  <div class="tmb-ttl">Imageine Fun</div>
+                  <div class="tmb-article">арт. 01-1260</div></a>
+                <div class="tmb-price"><span class="price">20 412</span>&nbsp;<span class="units">&#8381;</span></div>
+                <div class="tmb-compare"><a class="icon-list" href="#"></a></div>
+                <div class="tmb-cart"><a class="icon-basket" href="#"></a></div>
+              </div>
+            </div>
+          </div>
+        </div><!-- Текст END -->
       </div>
     </div>
   </div>
