@@ -65,6 +65,26 @@ $(window).resize(function () {
 
 $(document).ready(function () {
 
+  // Brands list expand
+
+  $(".brands-list .catalog-more-btn").click(function () {
+
+    var btn = $(this);
+
+    if (!btn.hasClass("active")) {
+
+      $(".brands-list .brand-tmb:nth-child(n+11)").css('display', 'inline-block').hide().slideDown(500,function () {
+        btn.addClass("active").html("Свернуть");
+      });
+
+    } else {
+      $(".brands-list .brand-tmb:nth-child(n+11)").css('display', 'inline-block').slideUp(500,function () {
+        btn.removeClass("active").html("Показать еще");
+      });
+    }
+
+  })
+
   // Catalog paint price
 
   $(".catalog-price-row .count-plus, .catalog-price-row .count-minus").click(function () {
@@ -250,15 +270,18 @@ $(document).ready(function () {
 
   $(".navbar-trigger").on("click",function () {
     $(".navbar-collapse").addClass("open");
+    $(".navbar-back").removeClass("closing").addClass("open");
   });
 
   $(".navbar-close").on("click",function () {
     $(".navbar-collapse").removeClass("open");
+    $(".navbar-back").addClass("closing").delay(500).queue('fx', function() { $(this).removeClass('open').removeClass('closing'); });
   });
 
   $(".navbar-collapse").on("click",function (e) {
     if (!$(e.target).hasClass(".navbar-wrapper") && !$(e.target).parents().hasClass(".navbar-wrapper")) {
       $(".navbar-collapse").removeClass("open");
+      $(".navbar-back").addClass("closing").delay(500).queue('fx', function() { $(this).removeClass('open').removeClass('closing'); });
     }
   })
 
