@@ -4334,7 +4334,7 @@ table.catalog-price-table .td-price {
   line-height: 30px;
   font-weight: bold;
   color: #181416;
-  padding: 9px 0 0 0; }
+  padding: 9px 0 0 10px; }
 
 table.catalog-price-table .td-price.inactive {
   color: #e1e1e1; }
@@ -4363,6 +4363,9 @@ table.catalog-price-table .td-name .sup-ttl {
   color: #181416;
   padding: 9px 35px 9px 17px;
   position: relative; }
+
+.count-element-val {
+  white-space: nowrap; }
 
 .count-plus {
   width: 14px;

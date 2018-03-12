@@ -92,7 +92,11 @@
     margin-left: 8px;
     margin-right: 8px; }
   .header-controls-item + .header-controls-item {
-    margin-left: 13px; } }
+    margin-left: 13px; }
+  .catalog-pic-paint-color {
+    height: 200px; }
+  .catalog-pic-paint-color .cont {
+    height: 200px; } }
 
 /* Small desktop END */
 @media (min-width: 768px) {
@@ -422,6 +426,8 @@
   .questions-form {
     margin: 44px -55px -73px -55px;
     padding: 32px 55px 50px 55px; }
+  .catalog-item-descr-mobile .questions-form {
+    margin-bottom: 0; }
   .questions-form h3,
   .questions-form .h3 {
     font-size: 15px; }
@@ -834,4 +840,12 @@
     float: none;
     margin-top: 10px; }
   .footer-menu-wrapper {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+  .paint-colors-wrapper {
+    margin: 30px 0 50px 0; }
+  .catalog-pic-paint-color {
+    height: 170px; }
+  .catalog-pic-paint-color .cont {
+    height: 170px; }
+  .popular-catalog .catalog-tmb .tmb-pic {
+    height: 370px; } }

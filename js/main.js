@@ -87,7 +87,7 @@ $(document).ready(function () {
 
   // Catalog paint price
 
-  $(".catalog-price-row .count-plus, .catalog-price-row .count-minus").click(function () {
+  $("body").on("click", ".catalog-price-row .count-plus, .catalog-price-row .count-minus", function () {
 
     var countValEl = $(this).closest(".catalog-price-row").find(".count-element-val .val");
     var countValInput = $(this).closest(".catalog-price-row").find("input[type=hidden]");
@@ -113,8 +113,11 @@ $(document).ready(function () {
 
     if (countVal > 0) {
       countValEl.closest(".catalog-price-row").find(".td-price .val").html(numFormat.to(elPrice * countVal));
+      $(".catalog-price-table").html(countValEl.closest(".catalog-price-table").html());
     } else {
       countValEl.closest(".catalog-price-row").find(".td-price .val").html(numFormat.to(elPrice * 1));
+      $(".catalog-price-table").html(countValEl.closest(".catalog-price-table").html());
+
     }
 
 
