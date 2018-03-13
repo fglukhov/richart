@@ -848,4 +848,6 @@
   .catalog-pic-paint-color .cont {
     height: 170px; }
   .popular-catalog .catalog-tmb .tmb-pic {
-    height: 370px; } }
+    height: 370px; }
+  .modal-dialog {
+    width: auto !important; } }

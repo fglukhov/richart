@@ -200,10 +200,15 @@ $(document).ready(function () {
         </div>\
         <div class="tmb-ttl">' + curTtl + '</div>\
         <div class="tmb-price">' + curPrice + ' <span class="units">&#8381;</span></div>\
-        <div class="tmb-compare' + comparedActive + '"><a class="icon-list' + comparedActive + '" href="#"></a></div>\
         <div class="tmb-cart' + incartActive + '"><a class="icon-basket' + incartActive + '" href="#"></a></div>\
       </div>\
       ');
+    }
+
+    if ($(this).find(".paint-popup").offset().left + 290 > $(".main").width()) {
+      $(this).find(".paint-popup").addClass("paint-popup-l");
+    } else {
+      $(this).find(".paint-popup").removeClass("paint-popup-l");
     }
 
 
@@ -212,8 +217,11 @@ $(document).ready(function () {
   // Add to cart paint
 
   $("body").on("click", ".paint-popup .tmb-cart", function () {
+
     $(this).addClass("active");
     $(this).find(".icon-basket").addClass("active")
+
+    $(".catalog-pic-paint-color").css("background-color",$(this).closest(".paint-popup").find(".paint-popup-color").css("background-color"))
 
     if ($(".add-to-cart-paint-modal").length) {
       $(".add-to-cart-paint-modal").remove();

@@ -4006,6 +4006,10 @@ hr {
   text-align: center;
   cursor: default; }
 
+.paint-popup-l {
+  left: auto;
+  right: 100%; }
+
 .paint-popup a {
   text-decoration: none !important; }
 
